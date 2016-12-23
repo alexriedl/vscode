@@ -4,25 +4,30 @@
     "vsicons.dontShowNewVersionMessage": true,
     "typescript.check.tscVersion": false,
 
-    //Set size of font
-    "editor.fontSize": 12,
-
-     //Use bash instead of windows cmd
+    //Use bash instead of windows cmd
     "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
 
     //Editor Stuffs
+    "editor.fontSize": 12,
+    "editor.codeLens": true,
     "editor.wordWrap": true,
+    "editor.insertSpaces": false,
+    "editor.renderWhitespace": "boundary",
+    "editor.autoClosingBrackets": false,
     "files.trimTrailingWhitespace": true,
+    "workbench.editor.showTabCloseButton": false,
 
     //File Explorer Stuffs
     "explorer.openEditors.visible": 5,
     "files.exclude": {
-        "bin": true,
-        "obj": true
+        "**/bin": true,
+        "**/obj": true,
+        "**/node_modules": true,
+        "**/wwwroot": true
     },
 
     //Vim Setting
-    "editor.cursorBlinking": "blink",       //Vim Plugin forces this setting
+    "editor.cursorStyle": "block",
     "vim.hlsearch": true,
     "vim.leader": ",",
     "vim.useSystemClipboard": true,
@@ -35,11 +40,6 @@
         {
             "before": ["j"],
             "after": ["g", "j"]
-        },
-        //Goto End of line with 'E'
-        {
-            "before": ["E"],
-            "after": ["$"]
         },
         //Scroll to center cursor in screen with 'z.'
         {

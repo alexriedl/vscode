@@ -1,7 +1,15 @@
 // Place your key bindings in this file to overwrite the defaults
 [
     { "key": "ctrl+h", "command": "workbench.action.focusPreviousGroup",
-                          "when": "editorTextFocus"},
+                          "when": "editorTextFocus && vim.mode == 'Normal'"},
     { "key": "ctrl+l", "command": "workbench.action.focusNextGroup",
-                          "when": "editorTextFocus"}
+                          "when": "editorTextFocus && vim.mode == 'Normal'"},
+    { "key": "shift+h", "command": "workbench.action.previousEditorInGroup",
+                          "when": "editorTextFocus && vim.mode == 'Normal'"},
+    { "key": "shift+l", "command": "workbench.action.nextEditorInGroup",
+                          "when": "editorTextFocus && vim.mode == 'Normal'"},
+    { "key": "shift+4", "command": "extension.vim_end",
+                          "when": "editorTextFocus && vim.mode == 'Normal'"},
+    { "key": "shift+z shift+z", "command": "workbench.action.closeActiveEditor",
+                          "when": "editorTextFocus && vim.mode == 'Normal'"}
 ]
