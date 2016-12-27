@@ -5,15 +5,15 @@
 
     //vim specific keybindings
     { "key": "ctrl+h", "command": "workbench.action.focusPreviousGroup",
-                          "when": "editorTextFocus && vim.mode == 'Normal'"},
+                          "when": "editorTextFocus && vim.mode == 'Normal'" },
     { "key": "ctrl+l", "command": "workbench.action.focusNextGroup",
-                          "when": "editorTextFocus && vim.mode == 'Normal'"},
+                          "when": "editorTextFocus && vim.mode == 'Normal'" },
     { "key": "shift+h", "command": "workbench.action.previousEditorInGroup",
-                          "when": "editorTextFocus && vim.mode == 'Normal'"},
+                          "when": "editorTextFocus && vim.mode == 'Normal'" },
     { "key": "shift+l", "command": "workbench.action.nextEditorInGroup",
-                          "when": "editorTextFocus && vim.mode == 'Normal'"},
+                          "when": "editorTextFocus && vim.mode == 'Normal'" },
     { "key": "shift+e", "command": "extension.vim_end",
-                          "when": "editorTextFocus && vim.mode != 'Insert'"},
+                          "when": "editorTextFocus && vim.mode != 'Insert'" },
     { "key": "shift+z shift+z", "command": "workbench.action.closeActiveEditor",
-                          "when": "editorTextFocus && vim.mode == 'Normal'"}
+                          "when": "editorTextFocus && vim.mode == 'Normal'" }
 ]

@@ -5,7 +5,7 @@
     "typescript.check.tscVersion": false,
 
     //Use bash instead of windows cmd
-    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+    //"terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
 
     //Editor Stuffs
     "editor.fontSize": 12,
