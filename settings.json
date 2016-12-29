@@ -4,8 +4,10 @@
     "vsicons.dontShowNewVersionMessage": true,
     "typescript.check.tscVersion": false,
 
-    //Use bash instead of windows cmd
+    // User settings
     //"terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+    "git.autofetch": false,
+    "editor.fontFamily": "'Consolas', 'Droid Sans Mono', 'Courier New', monospace, 'Droid Sans Fallback'",
 
     //Editor Stuffs
     "editor.fontSize": 12,
