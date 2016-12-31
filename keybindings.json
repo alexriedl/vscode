@@ -2,6 +2,7 @@
 [
     //'Normal' keybindings
     { "key": "ctrl+shift+s", "command": "workbench.action.files.saveAll" },
+    { "key": "ctrl+-", "command": "workbench.action.navigateBack" },
 
     //vim specific keybindings
     { "key": "ctrl+h", "command": "workbench.action.focusPreviousGroup",
