@@ -3,6 +3,8 @@
     //'Normal' keybindings
     { "key": "ctrl+shift+s", "command": "workbench.action.files.saveAll" },
     { "key": "ctrl+-", "command": "workbench.action.navigateBack" },
+    { "key": "alt+enter", "command": "editor.action.quickFix",
+                             "when": "editorTextFocus" },
 
     //vim specific keybindings
     { "key": "ctrl+h", "command": "workbench.action.focusPreviousGroup",
