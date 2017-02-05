@@ -17,7 +17,7 @@
     "editor.renderWhitespace": "boundary",
     "editor.autoClosingBrackets": false,
     "files.trimTrailingWhitespace": true,
-    "workbench.editor.showTabCloseButton": false,
+    "workbench.editor.tabCloseButton": "off",
 
     //File Explorer Stuffs
     "explorer.openEditors.visible": 5,
