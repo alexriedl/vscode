@@ -11,7 +11,6 @@
                           "when": "editorTextFocus && vim.mode == 'Normal'" },
     { "key": "ctrl+l", "command": "workbench.action.focusNextGroup",
                           "when": "editorTextFocus && vim.mode == 'Normal'" },
-    { "key": "ctrl+j", "command": "workbench.action.terminal.focus" },
     { "key": "ctrl+k", "command": "workbench.action.closePanel" },
 
     { "key": "shift+h", "command": "workbench.action.previousEditorInGroup",
