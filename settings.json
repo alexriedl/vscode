@@ -1,7 +1,6 @@
 // Place your settings in this file to overwrite the default settings
 {
     //Plugin Settings
-    "vsicons.dontShowNewVersionMessage": true,
     "typescript.check.tscVersion": false,
 
     // User settings
@@ -13,9 +12,11 @@
     "editor.fontSize": 12,
     "editor.codeLens": true,
     "editor.wordWrap": true,
-    "editor.insertSpaces": false,
+    "editor.wrappingColumn": 0,
     "editor.renderWhitespace": "boundary",
     "editor.autoClosingBrackets": false,
+    "editor.rulers": [120],
+    "editor.acceptSuggestionOnCommitCharacter": false,
     "files.trimTrailingWhitespace": true,
     "workbench.editor.tabCloseButton": "off",
 
