@@ -6,6 +6,8 @@
     { "key": "alt+enter", "command": "editor.action.quickFix",
                              "when": "editorTextFocus" },
 
+    { "key": "ctrl+f1", "command": "o.restart" },
+
     //vim specific keybindings
     { "key": "ctrl+h", "command": "workbench.action.focusPreviousGroup",
                           "when": "editorTextFocus && vim.mode == 'Normal'" },
