@@ -2,8 +2,8 @@
 [
     //'Normal' keybindings
     { "key": "ctrl+shift+s", "command": "workbench.action.files.saveAll" },
-    { "key": "ctrl+-", "command": "workbench.action.navigateBack" },
-    { "key": "alt+enter", "command": "editor.action.quickFix",
+    { "key": "ctrl+-",       "command": "workbench.action.navigateBack" },
+    { "key": "alt+enter",    "command": "editor.action.quickFix",
                              "when": "editorTextFocus" },
 
     { "key": "ctrl+f1", "command": "o.restart" },
@@ -13,7 +13,6 @@
                           "when": "editorTextFocus && vim.mode == 'Normal'" },
     { "key": "ctrl+l", "command": "workbench.action.focusNextGroup",
                           "when": "editorTextFocus && vim.mode == 'Normal'" },
-    { "key": "ctrl+j", "command": "workbench.action.terminal.focus" },
     { "key": "ctrl+k", "command": "workbench.action.closePanel" },
 
     { "key": "shift+h", "command": "workbench.action.previousEditorInGroup",
@@ -25,5 +24,16 @@
                            "when": "editorTextFocus && vim.mode != 'Insert'" },
 
     { "key": "shift+z shift+z", "command": "workbench.action.closeActiveEditor",
-                                   "when": "editorTextFocus && vim.mode == 'Normal'" }
+                                   "when": "editorTextFocus && vim.mode == 'Normal'" },
+
+    // Suggestions (Below vim settings to override some keystrokes)
+    { "key": "ctrl+j", "command": "selectNextSuggestion",
+                          "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible" },
+    { "key": "ctrl+k", "command": "selectPrevSuggestion",
+                          "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible" },
+
+    { "key": "ctrl+j",    "command": "workbench.action.quickOpenNavigateNext",
+                             "when": "inQuickOpen" },
+    { "key": "ctrl+k",    "command": "workbench.action.quickOpenNavigatePrevious",
+                             "when": "inQuickOpen" }
 ]
