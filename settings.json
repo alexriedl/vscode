@@ -1,6 +1,6 @@
 // Place your settings in this file to overwrite the default settings
 {
-    //Plugin Settings
+    // Plugin Settings
     "typescript.check.tscVersion": false,
 
     // User settings
@@ -8,7 +8,7 @@
     "git.autofetch": false,
     "editor.fontFamily": "'Consolas', 'Droid Sans Mono', 'Courier New', monospace, 'Droid Sans Fallback'",
 
-    //Editor Stuffs
+    // Editor Stuffs
     "editor.fontSize": 12,
     "editor.codeLens": true,
     "editor.wordWrap": true,
@@ -16,11 +16,14 @@
     "editor.renderWhitespace": "boundary",
     "editor.autoClosingBrackets": false,
     "editor.rulers": [120],
-    "editor.acceptSuggestionOnCommitCharacter": false,
     "files.trimTrailingWhitespace": true,
     "workbench.editor.tabCloseButton": "off",
 
-    //File Explorer Stuffs
+    // Suggestions
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "editor.acceptSuggestionOnEnter": false,
+
+    // File Explorer Stuffs
     "explorer.openEditors.visible": 5,
     "files.exclude": {
         "**/bin": true,
@@ -29,13 +32,13 @@
         "**/wwwroot": true
     },
 
-    //Vim Setting
+    // Vim Setting
     "editor.cursorStyle": "block",
     "vim.hlsearch": true,
     "vim.leader": ",",
     "vim.useSystemClipboard": true,
     "vim.otherModesKeyBindingsNonRecursive": [
-        //Move on wrapped lines correctly
+        // Move on wrapped lines correctly
         {
             "before": ["k"],
             "after": ["g", "k"]
@@ -44,7 +47,7 @@
             "before": ["j"],
             "after": ["g", "j"]
         },
-        //Scroll to center cursor in screen with 'z.'
+        // Scroll to center cursor in screen with 'z.'
         {
             "before": ["z", "."],
             "after": ["z", "z"]
