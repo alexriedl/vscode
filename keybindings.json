@@ -15,17 +15,6 @@
                           "when": "editorTextFocus && vim.mode == 'Normal'" },
     { "key": "ctrl+k", "command": "workbench.action.closePanel" },
 
-    { "key": "shift+h", "command": "workbench.action.previousEditorInGroup",
-                           "when": "editorTextFocus && vim.mode == 'Normal'" },
-    { "key": "shift+l", "command": "workbench.action.nextEditorInGroup",
-                           "when": "editorTextFocus && vim.mode == 'Normal'" },
-
-    { "key": "shift+e", "command": "extension.vim_end",
-                           "when": "editorTextFocus && vim.mode != 'Insert'" },
-
-    { "key": "shift+z shift+z", "command": "workbench.action.closeActiveEditor",
-                                   "when": "editorTextFocus && vim.mode == 'Normal'" },
-
     // Suggestions (Below vim settings to override some keystrokes)
     { "key": "ctrl+j", "command": "selectNextSuggestion",
                           "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible" },

@@ -3,10 +3,14 @@
     // Plugin Settings
     "typescript.check.tscVersion": false,
 
-    // User settings
-    //"terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+    // Various
     "git.autofetch": false,
     "editor.fontFamily": "'Consolas', 'Droid Sans Mono', 'Courier New', monospace, 'Droid Sans Fallback'",
+
+    // Terminal
+    //"terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+    "terminal.external.linuxExec": "alacritty",
+    "terminal.integrated.cursorBlinking": true,
 
     // Editor Stuffs
     "editor.fontSize": 12,
@@ -34,6 +38,7 @@
 
     // Vim Setting
     "editor.cursorStyle": "block",
+    "vim.useSolidBlockCursor": true,
     "vim.hlsearch": true,
     "vim.leader": ",",
     "vim.useSystemClipboard": true,
@@ -51,6 +56,49 @@
         {
             "before": ["z", "."],
             "after": ["z", "z"]
+        },
+        // Save and close
+        {
+            "before": ["Z", "Z"],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.files.save"
+                },
+                {
+                    "command": "workbench.action.closeActiveEditor"
+                }
+            ]
+        },
+        // Clear vim search
+        {
+            "before": ["leader", "space"],
+            "after": ["/", "escape"]
+        },
+        // Go to end of line with E
+        {
+            "before": ["E"],
+            "after": ["$"]
+        },
+        // Switch tabs
+        {
+            "before": ["H"],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.previousEditorInGroup"
+                }
+            ]
+        },
+        {
+            "before": ["L"],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.nextEditorInGroup"
+                }
+            ]
         }
-    ]
+    ],
+    "editor.cursorBlinking": "solid"
 }
