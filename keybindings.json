@@ -3,6 +3,7 @@
     //'Normal' keybindings
     { "key": "ctrl+shift+s", "command": "workbench.action.files.saveAll" },
     { "key": "ctrl+-",       "command": "workbench.action.navigateBack" },
+    { "key": "ctrl+_",       "command": "workbench.action.navigateForward" },
     { "key": "alt+enter",    "command": "editor.action.quickFix",
                              "when": "editorTextFocus" },
 
