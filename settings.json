@@ -39,6 +39,7 @@
     // Vim Setting
     "editor.cursorStyle": "block",
     "vim.useSolidBlockCursor": true,
+    "editor.cursorBlinking": "solid",
     "vim.hlsearch": true,
     "vim.leader": ",",
     "vim.useSystemClipboard": true,
@@ -98,7 +99,24 @@
                     "command": "workbench.action.nextEditorInGroup"
                 }
             ]
+        },
+        // Go to Delcaration
+        {
+            "before": ["leader", "d"],
+            "commands": [
+                {
+                    "command": "editor.action.goToDeclaration"
+                }
+            ]
+        },
+        // Go to Implementation
+        {
+            "before": ["leader", "i"],
+            "commands": [
+                {
+                    "command": "editor.action.goToImplementation"
+                }
+            ]
         }
-    ],
-    "editor.cursorBlinking": "solid"
+    ]
 }

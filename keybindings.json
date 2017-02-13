@@ -14,6 +14,8 @@
     { "key": "ctrl+l", "command": "workbench.action.focusNextGroup",
                           "when": "editorTextFocus && vim.mode == 'Normal'" },
     { "key": "ctrl+k", "command": "workbench.action.closePanel" },
+    { "key": "ctrl+o", "command": "workbench.action.navigateBack" },
+    { "key": "ctrl+i", "command": "workbench.action.navigateForward" },
 
     // Suggestions (Below vim settings to override some keystrokes)
     { "key": "ctrl+j", "command": "selectNextSuggestion",
