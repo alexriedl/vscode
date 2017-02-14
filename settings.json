@@ -5,6 +5,7 @@
 
     // Various
     "git.autofetch": false,
+    "window.menuBarVisibility": "toggle",
     "editor.fontFamily": "'Consolas', 'Droid Sans Mono', 'Courier New', monospace, 'Droid Sans Fallback'",
 
     // Terminal
