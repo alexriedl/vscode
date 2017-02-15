@@ -19,6 +19,17 @@
     { "key": "ctrl+o", "command": "workbench.action.navigateBack" },
     { "key": "ctrl+i", "command": "workbench.action.navigateForward" },
 
+    // Navigate within file explorer
+    { "key": "j", "command": "list.focusDown",
+                     "when": "listFocus" },
+    { "key": "k", "command": "list.focusUp",
+                     "when": "listFocus" },
+
+    // Focus files explorer
+    { "key": "ctrl+f", "command": "workbench.files.action.focusFilesExplorer" },
+    { "key": "ctrl+l", "command": "workbench.action.focusFirstEditorGroup",
+                          "when": "explorerViewletVisible && filesExplorerFocus" },
+
     // Suggestions
     { "key": "ctrl+j", "command": "selectNextSuggestion",
                           "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible" },
