@@ -19,10 +19,12 @@
     { "key": "ctrl+o", "command": "workbench.action.navigateBack" },
     { "key": "ctrl+i", "command": "workbench.action.navigateForward" },
 
-    // Navigate within file explorer
+    // File explorer
     { "key": "j", "command": "list.focusDown",
                      "when": "listFocus" },
     { "key": "k", "command": "list.focusUp",
+                     "when": "listFocus" },
+    { "key": "s", "command": "explorer.openToSide",
                      "when": "listFocus" },
 
     // Focus files explorer
