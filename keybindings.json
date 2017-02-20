@@ -26,6 +26,10 @@
                      "when": "listFocus" },
     { "key": "s", "command": "explorer.openToSide",
                      "when": "listFocus" },
+    { "key": "m a", "command": "explorer.newFile",
+                       "when": "explorerViewletFocus && explorerViewletVisible" },
+    { "key": "m d", "command": "filesExplorer.moveFileToTrash",
+                       "when": "explorerViewletFocus && explorerViewletVisible" },
 
     // Focus files explorer
     { "key": "ctrl+f", "command": "workbench.files.action.focusFilesExplorer" },
