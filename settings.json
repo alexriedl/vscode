@@ -39,6 +39,13 @@
         "**/wwwroot": true
     },
 
+    "search.exclude": {
+        "**/bin": true,
+        "**/obj": true,
+        "**/node_modules": true,
+        "**/bower_components": true
+    },
+
     // Vim Setting
     "editor.cursorStyle": "block",
     "editor.cursorBlinking": "solid",
@@ -128,14 +135,11 @@
                 }
             ]
         },
-        // Fix line above
+        // Fix line above when using sized 2 tabs (Temporary fix until this bug resolved)
         {
+
             "before": ["O"],
-            "commands": [
-                {
-                    "command": "editor.action.insertLineBefore"
-                }
-            ]
+            "after": ["k", "o"]
         }
     ]
 }
