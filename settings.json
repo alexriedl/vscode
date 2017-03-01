@@ -19,7 +19,7 @@
     "workbench.iconTheme": "vscode-icons",
     "editor.fontSize": 12,
     "editor.codeLens": true,
-    "editor.wordWrap": "bounded",
+    "editor.wordWrap": "on",
     "editor.renderWhitespace": "boundary",
     "editor.autoClosingBrackets": false,
     "editor.rulers": [120],
