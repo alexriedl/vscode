@@ -2,6 +2,7 @@
 {
     // Plugin Settings
     "typescript.check.tscVersion": false,
+    "vsicons.dontShowNewVersionMessage": true,
 
     // Various
     "git.autofetch": false,
@@ -25,6 +26,8 @@
     "editor.rulers": [120],
     "files.trimTrailingWhitespace": true,
     "workbench.editor.tabCloseButton": "off",
+
+    "diffEditor.renderSideBySide": false,
 
     // Suggestions
     "editor.acceptSuggestionOnCommitCharacter": false,
@@ -137,9 +140,13 @@
         },
         // Fix line above when using sized 2 tabs (Temporary fix until this bug resolved)
         {
-
             "before": ["O"],
-            "after": ["k", "o"]
+            "commands": [
+                {
+                    "command": "editor.action.insertLineBefore"
+                }
+            ],
+            "after": ["i"]
         }
     ]
 }
