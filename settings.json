@@ -27,7 +27,7 @@
     "files.trimTrailingWhitespace": true,
     "workbench.editor.tabCloseButton": "off",
 
-    "diffEditor.renderSideBySide": false,
+    "diffEditor.renderSideBySide": true,
 
     // Suggestions
     "editor.acceptSuggestionOnCommitCharacter": false,
@@ -59,6 +59,8 @@
     "vim.useSystemClipboard": true,
     "vim.otherModesKeyBindingsNonRecursive": [
         // Move on wrapped lines correctly
+        // Visual mode is broken with this on
+        /*
         {
             "before": ["k"],
             "after": ["g", "k"]
@@ -67,6 +69,7 @@
             "before": ["j"],
             "after": ["g", "j"]
         },
+        */
         // Scroll to center cursor in screen with 'z.'
         {
             "before": ["z", "."],
@@ -95,6 +98,7 @@
             "after": ["$"]
         },
         // Switch tabs
+        // (Needed here because f[ind] will switch tabs when searching for L and H)
         {
             "before": ["H"],
             "commands": [
