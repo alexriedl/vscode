@@ -3,6 +3,7 @@
     // Plugin Settings
     "typescript.check.tscVersion": false,
     "vsicons.dontShowNewVersionMessage": true,
+    "haskell.ghcMod.executablePath": "ghc-mod",
 
     // Various
     "git.autofetch": false,
@@ -39,6 +40,7 @@
         "**/bin": true,
         "**/obj": true,
         "**/node_modules": true,
+        "**/bower_components": true,
         "**/wwwroot": true
     },
 
@@ -46,7 +48,8 @@
         "**/bin": true,
         "**/obj": true,
         "**/node_modules": true,
-        "**/bower_components": true
+        "**/bower_components": true,
+        "**/wwwroot": true
     },
 
     // Vim Setting
