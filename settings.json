@@ -96,12 +96,8 @@
         {
             "before": ["Z", "Z"],
             "commands": [
-                {
-                    "command": "workbench.action.files.save"
-                },
-                {
-                    "command": "workbench.action.closeActiveEditor"
-                }
+                { "command": "workbench.action.files.save" },
+                { "command": "workbench.action.closeActiveEditor" }
             ]
         },
         // Clear vim search
@@ -119,53 +115,41 @@
         {
             "before": ["H"],
             "commands": [
-                {
-                    "command": "workbench.action.previousEditorInGroup"
-                }
+                { "command": "workbench.action.previousEditorInGroup" }
             ]
         },
         {
             "before": ["L"],
             "commands": [
-                {
-                    "command": "workbench.action.nextEditorInGroup"
-                }
+                { "command": "workbench.action.nextEditorInGroup" }
             ]
         },
         // Go to Delcaration
         {
             "before": ["leader", "d"],
             "commands": [
-                {
-                    "command": "editor.action.goToDeclaration"
-                }
+                { "command": "editor.action.goToDeclaration" }
             ]
         },
         // Go to Implementation
         {
             "before": ["leader", "i"],
             "commands": [
-                {
-                    "command": "editor.action.goToImplementation"
-                }
+                { "command": "editor.action.goToImplementation" }
             ]
         },
         // Keep editor preview open
         {
             "before": ["leader", "c"],
             "commands": [
-                {
-                    "command": "workbench.action.keepEditor"
-                }
+                { "command": "workbench.action.keepEditor" }
             ]
         },
         // Fix line above when using sized 2 tabs (Temporary fix until this bug resolved)
         {
             "before": ["O"],
             "commands": [
-                {
-                    "command": "editor.action.insertLineBefore"
-                }
+                { "command": "editor.action.insertLineBefore" }
             ],
             "after": ["i"]
         }
