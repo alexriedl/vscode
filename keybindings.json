@@ -16,8 +16,6 @@
     { "key": "ctrl+l", "command": "workbench.action.focusNextGroup",
                           "when": "editorTextFocus && vim.mode == 'Normal'" },
     { "key": "ctrl+k", "command": "workbench.action.closePanel" },
-    { "key": "ctrl+o", "command": "workbench.action.navigateBack" },
-    { "key": "ctrl+i", "command": "workbench.action.navigateForward" },
     { "key": "ctrl+t", "command": "workbench.action.showAllSymbols" },
 
     // File explorer
