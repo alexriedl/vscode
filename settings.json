@@ -4,6 +4,7 @@
     "typescript.check.tscVersion": false,
     "vsicons.dontShowNewVersionMessage": true,
     "haskell.ghcMod.executablePath": "ghc-mod",
+    "python.linting.enabled": false,
 
     // Various
     "git.autofetch": false,
@@ -13,12 +14,14 @@
 
     // Terminal
     //"terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
-    "terminal.external.linuxExec": "alacritty",
+    //"terminal.external.linuxExec": "alacritty",
     "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.commandsToSkipShell": [ "workbench.action.closePanel" ],
 
     // Editor Stuffs
     "workbench.colorTheme": "Flatland Monokai",
     "workbench.iconTheme": "vscode-icons",
+    "editor.tabSize": 2,
     "editor.fontSize": 12,
     "editor.codeLens": true,
     "editor.wordWrap": "on",
@@ -44,14 +47,6 @@
         "**/wwwroot": true
     },
 
-    "search.exclude": {
-        "**/bin": true,
-        "**/obj": true,
-        "**/node_modules": true,
-        "**/bower_components": true,
-        "**/wwwroot": true
-    },
-
     // Vim Setting
     "editor.cursorStyle": "block",
     "editor.cursorBlinking": "solid",
@@ -60,6 +55,25 @@
     "vim.hlsearch": true,
     "vim.leader": ",",
     "vim.useSystemClipboard": true,
+    "vim.insertModeKeyBindingsNonRecursive": [
+        // Easy escape
+        {
+            "before": ["j", "k"],
+            "after": ["escape"]
+        },
+        {
+            "before": ["k", "j"],
+            "after": ["escape"]
+        },
+        {
+            "before": ["j", "j"],
+            "after": ["escape"]
+        },
+        {
+            "before": ["k", "k"],
+            "after": ["escape"]
+        }
+    ],
     "vim.otherModesKeyBindingsNonRecursive": [
         // Move on wrapped lines correctly
         // Visual mode is broken with this on

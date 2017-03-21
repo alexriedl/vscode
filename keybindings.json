@@ -5,7 +5,7 @@
     { "key": "ctrl+-",       "command": "workbench.action.navigateBack" },
     { "key": "ctrl+shift+-", "command": "workbench.action.navigateForward" },
     { "key": "alt+enter",    "command": "editor.action.quickFix",
-                                "when": "editorTextFocus" },
+                                "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly" },
 
     // Restart Omnisharp
     { "key": "ctrl+f1", "command": "o.restart" },
@@ -51,6 +51,11 @@
                           "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible" },
     { "key": "ctrl+k", "command": "selectPrevSuggestion",
                           "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible" },
+
+    { "key": "ctrl+j", "command": "showNextParameterHint",
+                          "when": "editorTextFocus && parameterHintsMultipleSignatures && parameterHintsVisible" },
+    { "key": "ctrl+k", "command": "showPrevParameterHint",
+                          "when": "editorTextFocus && parameterHintsMultipleSignatures && parameterHintsVisible" },
 
     { "key": "ctrl+j",    "command": "workbench.action.quickOpenNavigateNext",
                              "when": "inQuickOpen" },
