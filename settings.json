@@ -1,42 +1,45 @@
 // Place your settings in this file to overwrite the default settings
 {
+    // Language specific settings
+    "[cpp]": {
+        "editor.quickSuggestions": false
+    },
+    "[c]": {
+        "editor.quickSuggestions": false
+    },
     // Plugin Settings
     "typescript.check.tscVersion": false,
     "vsicons.dontShowNewVersionMessage": true,
     "haskell.ghcMod.executablePath": "ghc-mod",
     "python.linting.enabled": false,
-
     // Various
     "git.autofetch": false,
     "window.menuBarVisibility": "toggle",
-    "editor.fontFamily": "'Consolas', 'Droid Sans Mono', 'Courier New', monospace, 'Droid Sans Fallback'",
     "debug.inlineValues": true,
-
     // Terminal
     //"terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
     //"terminal.external.linuxExec": "alacritty",
     "terminal.integrated.cursorBlinking": true,
-    "terminal.integrated.commandsToSkipShell": [ "workbench.action.closePanel" ],
-
+    "terminal.integrated.commandsToSkipShell": [
+        "workbench.action.closePanel"
+    ],
     // Editor Stuffs
     "workbench.colorTheme": "Flatland Monokai",
     "workbench.iconTheme": "vscode-icons",
+    "editor.fontFamily": "'Consolas', 'Droid Sans Mono', 'Courier New', monospace, 'Droid Sans Fallback'",
     "editor.tabSize": 2,
     "editor.fontSize": 12,
     "editor.codeLens": true,
     "editor.wordWrap": "on",
     "editor.renderWhitespace": "boundary",
     "editor.autoClosingBrackets": false,
-    "editor.rulers": [120],
+    "editor.rulers": [ 120 ],
     "files.trimTrailingWhitespace": true,
     "workbench.editor.tabCloseButton": "off",
-
     "diffEditor.renderSideBySide": true,
-
     // Suggestions
     "editor.acceptSuggestionOnCommitCharacter": false,
     "editor.acceptSuggestionOnEnter": false,
-
     // File Explorer Stuffs
     "explorer.openEditors.visible": 5,
     "files.exclude": {
@@ -46,7 +49,6 @@
         "**/bower_components": true,
         "**/wwwroot": true
     },
-
     // Vim Setting
     "editor.cursorStyle": "block",
     "editor.cursorBlinking": "solid",
@@ -58,20 +60,20 @@
     "vim.insertModeKeyBindingsNonRecursive": [
         // Easy escape
         {
-            "before": ["j", "k"],
-            "after": ["escape"]
+            "before": [ "j", "k" ],
+            "after": [ "escape" ]
         },
         {
-            "before": ["k", "j"],
-            "after": ["escape"]
+            "before": [ "k", "j" ],
+            "after": [ "escape" ]
         },
         {
-            "before": ["j", "j"],
-            "after": ["escape"]
+            "before": [ "j", "j" ],
+            "after": [ "escape" ]
         },
         {
-            "before": ["k", "k"],
-            "after": ["escape"]
+            "before": [ "k", "k" ],
+            "after": [ "escape" ]
         }
     ],
     "vim.otherModesKeyBindingsNonRecursive": [
@@ -89,7 +91,7 @@
         */
         // Scroll to center cursor in screen with 'z.'
         {
-            "before": ["z", "."],
+            "before": [ "z", "." ],
             "after": ["z", "z"]
         },
         // Save and close
@@ -122,20 +124,6 @@
             "before": ["L"],
             "commands": [
                 { "command": "workbench.action.nextEditorInGroup" }
-            ]
-        },
-        // Go to Delcaration
-        {
-            "before": ["leader", "d"],
-            "commands": [
-                { "command": "editor.action.goToDeclaration" }
-            ]
-        },
-        // Go to Implementation
-        {
-            "before": ["leader", "i"],
-            "commands": [
-                { "command": "editor.action.goToImplementation" }
             ]
         },
         // Keep editor preview open
