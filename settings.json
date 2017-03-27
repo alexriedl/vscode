@@ -140,6 +140,12 @@
                 { "command": "editor.action.insertLineBefore" }
             ],
             "after": ["i"]
+        },
+        {
+            "before": ["g", "i"],
+            "commands": [
+                { "command": "editor.action.goToImplementation" }
+            ]
         }
     ]
 }

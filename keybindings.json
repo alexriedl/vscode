@@ -21,9 +21,11 @@
     { "key": "ctrl+t", "command": "workbench.action.showAllSymbols" },
 
 /*
-    { "key": "g i", "command": "editor.action.goToImplementation" },
-    { "key": "g d", "command": "editor.action.goToDeclaration" },
-*/
+    { "key": "g i", "command": "editor.action.goToImplementation",
+                       "when": "vim.mode == 'Normal'" },
+    { "key": "g d", "command": "editor.action.goToDeclaration",
+                       "when": "vim.mode == 'Normal'" },
+                       */
 
     { "key": "alt+l", "command": "editor.action.marker.next",
                          "when": "editorFocus && !editorReadonly" },
@@ -38,6 +40,8 @@
     { "key": "s",       "command": "explorer.openToSide",
                            "when": "listFocus" },
     { "key": "m a",     "command": "explorer.newFile",
+                           "when": "explorerViewletFocus && explorerViewletVisible" },
+    { "key": "m f",     "command": "explorer.newFolder",
                            "when": "explorerViewletFocus && explorerViewletVisible" },
     { "key": "m m",     "command": "renameFile",
                            "when": "explorerViewletFocus && explorerViewletVisible" },
@@ -63,7 +67,7 @@
                            "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible" },
     { "key": "ctrl+k",  "command": "selectPrevSuggestion",
                            "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible" },
- 
+
     { "key": "ctrl+j",  "command": "showNextParameterHint",
                            "when": "editorTextFocus && parameterHintsMultipleSignatures && parameterHintsVisible" },
     { "key": "ctrl+k",  "command": "showPrevParameterHint",
