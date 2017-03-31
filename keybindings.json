@@ -11,6 +11,7 @@
 
     // Restart Omnisharp
     { "key": "ctrl+f1", "command": "o.restart" },
+    { "key": "ctrl+shift+r", "command": "o.restart" },
 
     // vim specific keybindings
     { "key": "ctrl+h", "command": "workbench.action.focusPreviousGroup",
@@ -26,6 +27,10 @@
     { "key": "g d", "command": "editor.action.goToDeclaration",
                        "when": "vim.mode == 'Normal'" },
                        */
+
+
+    { "key": "ctrl+s", "command": "editor.action.sortLinesAscending",
+                          "when": "editorFocus && !editorReadonly" },
 
     { "key": "alt+l", "command": "editor.action.marker.next",
                          "when": "editorFocus && !editorReadonly" },
