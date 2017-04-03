@@ -13,6 +13,7 @@
     "vsicons.dontShowNewVersionMessage": true,
     "haskell.ghcMod.executablePath": "ghc-mod",
     "python.linting.enabled": false,
+    "csharp.suppressDotnetRestoreNotification": true,
 
     // Various
     "git.autofetch": false,
@@ -62,7 +63,7 @@
     "editor.cursorStyle": "block",
     "editor.cursorBlinking": "solid",
     "vim.useSolidBlockCursor": false,
-    "vim.autoindent": false,
+    "vim.autoindent": true,
     "vim.hlsearch": true,
     "vim.leader": ",",
     "vim.useSystemClipboard": true,
@@ -74,14 +75,6 @@
         },
         {
             "before": [ "k", "j" ],
-            "after": [ "escape" ]
-        },
-        {
-            "before": [ "j", "j" ],
-            "after": [ "escape" ]
-        },
-        {
-            "before": [ "k", "k" ],
             "after": [ "escape" ]
         }
     ],
