@@ -25,7 +25,8 @@
     //"terminal.external.linuxExec": "alacritty",
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.commandsToSkipShell": [
-        "workbench.action.closePanel"
+        "workbench.action.closePanel",
+        "workbench.action.navigateUp"
     ],
 
     // Editor Stuffs

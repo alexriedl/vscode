@@ -14,19 +14,19 @@
     { "key": "ctrl+shift+r", "command": "o.restart" },
 
     // vim specific keybindings
+    /*
     { "key": "ctrl+h", "command": "workbench.action.focusPreviousGroup",
                           "when": "editorTextFocus && vim.mode == 'Normal'" },
     { "key": "ctrl+l", "command": "workbench.action.focusNextGroup",
                           "when": "editorTextFocus && vim.mode == 'Normal'" },
-    { "key": "ctrl+k", "command": "workbench.action.closePanel" },
-    { "key": "ctrl+t", "command": "workbench.action.showAllSymbols" },
+                          */
+    { "key": "ctrl+h", "command": "workbench.action.navigateLeft" },
+    { "key": "ctrl+l", "command": "workbench.action.navigateRight" },
+    { "key": "ctrl+j", "command": "workbench.action.navigateDown" },
+    { "key": "ctrl+k", "command": "workbench.action.navigateUp" },
 
-/*
-    { "key": "g i", "command": "editor.action.goToImplementation",
-                       "when": "vim.mode == 'Normal'" },
-    { "key": "g d", "command": "editor.action.goToDeclaration",
-                       "when": "vim.mode == 'Normal'" },
-                       */
+    { "key": "ctrl+c", "command": "workbench.action.closePanel" },
+    { "key": "ctrl+t", "command": "workbench.action.showAllSymbols" },
 
 
     { "key": "ctrl+s", "command": "editor.action.sortLinesAscending",
@@ -50,9 +50,9 @@
                            "when": "explorerViewletFocus && explorerViewletVisible" },
     { "key": "m m",     "command": "renameFile",
                            "when": "explorerViewletFocus && explorerViewletVisible" },
-    { "key": "m d",     "command": "deleteFile",
-                           "when": "explorerViewletFocus && explorerViewletVisible" },
     { "key": "m d",     "command": "moveFileToTrash",
+                           "when": "explorerViewletFocus && explorerViewletVisible" },
+    { "key": "m d",     "command": "deleteFile",
                            "when": "explorerViewletFocus && explorerViewletVisible" },
     { "key": "x",       "command": "list.collapse",
                            "when": "listFocus" },
