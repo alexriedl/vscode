@@ -59,8 +59,6 @@
     },
 
     // Vim Setting
-    "editor.cursorStyle": "block",
-    "editor.cursorBlinking": "solid",
     "vim.useSolidBlockCursor": false,
     "vim.autoindent": true,
     "vim.hlsearch": true,
