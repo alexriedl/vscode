@@ -10,7 +10,6 @@
                                 "when": "editorHasSignatureHelpProvider && editorTextFocus" },
 
     // Restart Omnisharp
-    { "key": "ctrl+f1", "command": "o.restart" },
     { "key": "ctrl+shift+r", "command": "o.restart" },
 
     // vim specific keybindings
@@ -29,6 +28,11 @@
                          "when": "editorFocus && !editorReadonly" },
     { "key": "alt+h", "command": "editor.action.marker.prev",
                          "when": "editorFocus && !editorReadonly" },
+
+    { "key": "alt+j", "command": "macros.fastMoveDown",
+                         "when": "editorFocus" },
+    { "key": "alt+k", "command": "macros.fastMoveUp",
+                         "when": "editorFocus" },
 
     // File explorer
     { "key": "j",       "command": "list.focusDown",
@@ -55,10 +59,14 @@
                            "when": "explorerViewletFocus && explorerViewletVisible" },
     { "key": "shift+g", "command": "list.focusLast",
                            "when": "explorerViewletFocus && explorerViewletVisible" },
+    { "key": "m c",     "command": "macros.duplicateFile",
+                           "when": "explorerViewletFocus && explorerViewletVisible" },
 
     { "key": "ctrl+f",  "command": "workbench.files.action.focusFilesExplorer" },
+    /*
     { "key": "ctrl+l",  "command": "workbench.action.focusFirstEditorGroup",
                            "when": "explorerViewletVisible && filesExplorerFocus" },
+                           */
 
     // Suggestions
     { "key": "ctrl+j",  "command": "selectNextSuggestion",

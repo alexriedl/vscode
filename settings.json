@@ -65,6 +65,7 @@
     "vim.hlsearch": true,
     "vim.leader": ",",
     "vim.useSystemClipboard": true,
+    "vim.easymotion": true,
     "vim.insertModeKeyBindingsNonRecursive": [
         // Easy escape
         {
@@ -147,5 +148,27 @@
                 { "command": "editor.action.goToImplementation" }
             ]
         }
-    ]
+    ],
+
+    "macros": {
+        "duplicateFile": [
+            "filesExplorer.copy",
+            "filesExplorer.paste",
+            "renameFile"
+        ],
+        "fastMoveDown": [
+            "extension.vim_down",
+            "extension.vim_down",
+            "extension.vim_down",
+            "extension.vim_down",
+            "extension.vim_down"
+        ],
+        "fastMoveUp": [
+            "extension.vim_up",
+            "extension.vim_up",
+            "extension.vim_up",
+            "extension.vim_up",
+            "extension.vim_up"
+        ]
+    }
 }
