@@ -36,7 +36,7 @@
     "editor.fontFamily": "'Consolas', 'Droid Sans Mono', 'Courier New', monospace, 'Droid Sans Fallback'",
     "editor.tabSize": 2,
     "editor.fontSize": 12,
-    "editor.codeLens": true,
+    "editor.codeLens": false,
     // "editor.wordWrap": "on",
     "editor.renderWhitespace": "boundary",
     "editor.autoClosingBrackets": false,
