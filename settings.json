@@ -2,9 +2,13 @@
 {
     // Language specific settings
     "[cpp]": {
+        "editor.tabSize": 4,
+        "editor.formatOnType": true,
         "editor.quickSuggestions": false
     },
     "[c]": {
+        "editor.tabSize": 4,
+        "editor.formatOnType": true,
         "editor.quickSuggestions": false
     },
 
