@@ -18,7 +18,7 @@
     { "key": "ctrl+j", "command": "workbench.action.navigateDown" },
     { "key": "ctrl+k", "command": "workbench.action.navigateUp" },
 
-    { "key": "ctrl+c", "command": "workbench.action.closePanel" },
+    { "key": "ctrl+m", "command": "workbench.action.closePanel" },
     { "key": "ctrl+t", "command": "workbench.action.showAllSymbols" },
 
     { "key": "ctrl+s", "command": "editor.action.sortLinesAscending",
@@ -63,10 +63,6 @@
                            "when": "explorerViewletFocus && explorerViewletVisible" },
 
     { "key": "ctrl+f",  "command": "workbench.files.action.focusFilesExplorer" },
-    /*
-    { "key": "ctrl+l",  "command": "workbench.action.focusFirstEditorGroup",
-                           "when": "explorerViewletVisible && filesExplorerFocus" },
-                           */
 
     // Suggestions
     { "key": "ctrl+j",  "command": "selectNextSuggestion",
@@ -74,12 +70,12 @@
     { "key": "ctrl+k",  "command": "selectPrevSuggestion",
                            "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible" },
 
-/*
-    { "key": "ctrl+j",  "command": "showNextParameterHint",
-                           "when": "editorTextFocus && parameterHintsMultipleSignatures && parameterHintsVisible" },
-    { "key": "ctrl+k",  "command": "showPrevParameterHint",
-                           "when": "editorTextFocus && parameterHintsMultipleSignatures && parameterHintsVisible" },
-                           */
+    { "key": "alt+j",  "command": "showNextParameterHint",
+                          "when": "editorTextFocus && parameterHintsMultipleSignatures && parameterHintsVisible" },
+    { "key": "alt+k",  "command": "showPrevParameterHint",
+                          "when": "editorTextFocus && parameterHintsMultipleSignatures && parameterHintsVisible" },
+    { "key": "escape", "command": "closeParameterHints", // NOTE: Escape seems to be captured by vim
+                          "when": "editorTextFocus && parameterHintsVisible" },
 
     { "key": "ctrl+j",  "command": "workbench.action.quickOpenNavigateNext",
                            "when": "inQuickOpen" },

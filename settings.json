@@ -15,7 +15,6 @@
     // Plugin Settings
     "typescript.check.tscVersion": false,
     "vsicons.dontShowNewVersionMessage": true,
-    "haskell.ghcMod.executablePath": "ghc-mod",
     "python.linting.enabled": false,
     "csharp.suppressDotnetRestoreNotification": true,
 
@@ -26,8 +25,7 @@
     "window.title": "${dirty}${rootName}${separator}${activeEditorShort}",
 
     // Terminal
-    //"terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
-    //"terminal.external.linuxExec": "alacritty",
+    "terminal.integrated.shell.linux": "bash",
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.commandsToSkipShell": [
         "workbench.action.closePanel",
@@ -54,13 +52,14 @@
     "editor.acceptSuggestionOnEnter": false,
 
     // File Explorer Stuffs
-    "explorer.openEditors.visible": 5,
+    "explorer.openEditors.visible": 0,
     "files.exclude": {
         "**/bin": true,
         "**/obj": true,
         "**/node_modules": true,
         "**/bower_components": true,
-        "**/wwwroot": true
+        "**/wwwroot": true,
+        ".vs": true
     },
 
     // Vim Setting
@@ -82,8 +81,10 @@
         }
     ],
     "vim.otherModesKeyBindingsNonRecursive": [
-        // Move on wrapped lines correctly
+        // Move on wrapped lines in an expected way
         // Visual mode is broken with this on
+        // https://github.com/VSCodeVim/Vim/issues/1377 (Selection messing up while moving)
+        // https://github.com/VSCodeVim/Vim/issues/1323 (Cursor position issue)
         /*
         {
             "before": ["k"],
@@ -157,8 +158,7 @@
     "macros": {
         "duplicateFile": [
             "filesExplorer.copy",
-            "filesExplorer.paste",
-            "renameFile"
+            "filesExplorer.paste"
         ],
         "fastMoveDown": [
             "extension.vim_down",
