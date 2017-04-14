@@ -3,12 +3,10 @@
     // Language specific settings
     "[cpp]": {
         "editor.tabSize": 4,
-        "editor.formatOnType": true,
         "editor.quickSuggestions": false
     },
     "[c]": {
         "editor.tabSize": 4,
-        "editor.formatOnType": true,
         "editor.quickSuggestions": false
     },
 
@@ -68,7 +66,11 @@
     "vim.hlsearch": true,
     "vim.leader": ",",
     "vim.useSystemClipboard": true,
+
+    // Easy Motion Settings
     "vim.easymotion": true,
+
+    // Special Vim Keybindings
     "vim.insertModeKeyBindingsNonRecursive": [
         // Easy escape
         {
@@ -152,6 +154,35 @@
             "commands": [
                 { "command": "editor.action.goToImplementation" }
             ]
+        },
+        // Easy motion shortcuts
+        { // Search for character (all directions)
+            "before": ["leader", "s"],
+            "after": ["leader", "leader", "s"]
+        },
+        { // Find character forwards
+            "before": ["leader", "f"],
+            "after": ["leader", "leader", "f"]
+        },
+        { // Find character backwards
+            "before": ["leader", "F"],
+            "after": ["leader", "leader", "F"]
+        },
+        { // Till character forwards
+            "before": ["leader", "t"],
+            "after": ["leader", "leader", "t"]
+        },
+        { // Till character backwards
+            "before": ["leader", "T"],
+            "after": ["leader", "leader", "T"]
+        },
+        { // Start of word Backwards
+            "before": ["leader", "b"],
+            "after": ["leader", "leader", "b"]
+        },
+        { // Start of Word forwards
+            "before": ["leader", "w"],
+            "after": ["leader", "leader", "w"]
         }
     ],
 
