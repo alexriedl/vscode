@@ -113,7 +113,9 @@
         // Clear vim search
         {
             "before": ["leader", "space"],
-            "after": ["/", "escape"]
+            "commands": [
+                { "command": ":nohl" }
+            ]
         },
         // Go to end of line with E
         {
