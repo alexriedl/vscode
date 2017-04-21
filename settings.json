@@ -11,39 +11,28 @@
     },
 
     // Plugin Settings
+    "csharp.suppressDotnetRestoreNotification": true,
+    "git.autofetch": false,
+    "python.linting.enabled": false,
     "typescript.check.tscVersion": false,
     "vsicons.dontShowNewVersionMessage": true,
-    "python.linting.enabled": false,
-    "csharp.suppressDotnetRestoreNotification": true,
-
-    // Various
-    "git.autofetch": false,
-    "debug.inlineValues": true,
-    "window.menuBarVisibility": "toggle",
-    "window.title": "${dirty}${rootName}${separator}${activeEditorShort}",
-
-    // Terminal
-    "terminal.integrated.shell.linux": "bash",
-    "terminal.integrated.cursorBlinking": true,
-    "terminal.integrated.commandsToSkipShell": [
-        "workbench.action.closePanel",
-        "workbench.action.navigateUp"
-    ],
 
     // Editor Stuffs
-    "workbench.colorTheme": "Flatland Monokai",
-    "workbench.iconTheme": "vscode-icons",
-    "editor.fontFamily": "'Consolas', 'Droid Sans Mono', 'Courier New', monospace, 'Droid Sans Fallback'",
-    "editor.tabSize": 2,
-    "editor.fontSize": 12,
-    "editor.codeLens": false,
-    // "editor.wordWrap": "on",
-    "editor.renderWhitespace": "boundary",
-    "editor.autoClosingBrackets": false,
-    "editor.rulers": [ 120 ],
-    "files.trimTrailingWhitespace": true,
-    "workbench.editor.tabCloseButton": "off",
+    "debug.inlineValues": true,
     "diffEditor.renderSideBySide": true,
+    "editor.autoClosingBrackets": false,
+    "editor.codeLens": false,
+    "editor.fontFamily": "'Consolas', 'Droid Sans Mono', 'Courier New', monospace, 'Droid Sans Fallback'",
+    "editor.fontSize": 12,
+    "editor.renderWhitespace": "boundary",
+    "editor.rulers": [ 120 ],
+    "editor.tabSize": 2,
+    "files.trimTrailingWhitespace": true,
+    "window.menuBarVisibility": "toggle",
+    "window.title": "${dirty}${rootName}${separator}${activeEditorShort}",
+    "workbench.colorTheme": "Flatland Monokai",
+    "workbench.editor.tabCloseButton": "off",
+    "workbench.iconTheme": "vscode-icons",
 
     // Suggestions
     "editor.acceptSuggestionOnCommitCharacter": false,
@@ -61,11 +50,22 @@
     },
 
     // Vim Setting
-    "vim.useSolidBlockCursor": false,
     "vim.autoindent": true,
     "vim.hlsearch": true,
     "vim.leader": ",",
+    "vim.useSolidBlockCursor": false,
     "vim.useSystemClipboard": true,
+
+    // Status Bar Color
+    "vim.statusBarColorControl": true,
+    "vim.statusBarColors": {
+        "normal": "#0079ce",
+        "insert": "#007f3f",
+        "visual": "#5f00af",
+        "visualline": "#86592d",
+        "visualblock": "#a02f2f",
+        "replace": "#000000"
+    },
 
     // Easy Motion Settings
     "vim.easymotion": true,
@@ -97,11 +97,6 @@
             "after": ["g", "j"]
         },
         */
-        // Scroll to center cursor in screen with 'z.'
-        {
-            "before": [ "z", "." ],
-            "after": ["z", "z"]
-        },
         // Save and close
         {
             "before": ["Z", "Z"],
@@ -205,5 +200,56 @@
             "extension.vim_up",
             "extension.vim_up"
         ]
-    }
+    },
+
+    // Terminal
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.shell.linux": "bash",
+    "terminal.integrated.commandsToSkipShell": [
+        "workbench.action.closePanel",
+        "workbench.action.navigateUp",
+
+        // Default
+        "editor.action.toggleTabFocusMode",
+        "workbench.action.debug.continue",
+        "workbench.action.debug.pause",
+        "workbench.action.debug.restart",
+        "workbench.action.debug.run",
+        "workbench.action.debug.start",
+        "workbench.action.debug.stop",
+        "workbench.action.focusActiveEditorGroup",
+        "workbench.action.focusFirstEditorGroup",
+        "workbench.action.focusSecondEditorGroup",
+        "workbench.action.focusThirdEditorGroup",
+        "workbench.action.openNextRecentlyUsedEditorInGroup",
+        "workbench.action.openPreviousRecentlyUsedEditorInGroup",
+        "workbench.action.quickOpen",
+        "workbench.action.showCommands",
+        "workbench.action.terminal.clear",
+        "workbench.action.terminal.copySelection",
+        "workbench.action.terminal.focus",
+        "workbench.action.terminal.focusAtIndex1",
+        "workbench.action.terminal.focusAtIndex2",
+        "workbench.action.terminal.focusAtIndex3",
+        "workbench.action.terminal.focusAtIndex4",
+        "workbench.action.terminal.focusAtIndex5",
+        "workbench.action.terminal.focusAtIndex6",
+        "workbench.action.terminal.focusAtIndex7",
+        "workbench.action.terminal.focusAtIndex8",
+        "workbench.action.terminal.focusAtIndex9",
+        "workbench.action.terminal.focusNext",
+        "workbench.action.terminal.focusPrevious",
+        "workbench.action.terminal.kill",
+        "workbench.action.terminal.new",
+        "workbench.action.terminal.paste",
+        "workbench.action.terminal.runActiveFile",
+        "workbench.action.terminal.runSelectedText",
+        "workbench.action.terminal.scrollDown",
+        "workbench.action.terminal.scrollDownPage",
+        "workbench.action.terminal.scrollToBottom",
+        "workbench.action.terminal.scrollToTop",
+        "workbench.action.terminal.scrollUp",
+        "workbench.action.terminal.scrollUpPage",
+        "workbench.action.terminal.toggleTerminal"
+    ]
 }
