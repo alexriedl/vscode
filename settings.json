@@ -21,7 +21,7 @@
     "debug.inlineValues": true,
     "diffEditor.renderSideBySide": true,
     "editor.autoClosingBrackets": false,
-    "editor.codeLens": false,
+    "editor.codeLens": true,
     "editor.fontFamily": "'Consolas', 'Droid Sans Mono', 'Courier New', monospace, 'Droid Sans Fallback'",
     "editor.fontSize": 12,
     "editor.renderWhitespace": "boundary",

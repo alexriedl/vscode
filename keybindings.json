@@ -72,8 +72,10 @@
                           "when": "editorTextFocus && parameterHintsMultipleSignatures && parameterHintsVisible" },
     { "key": "alt+k",  "command": "showPrevParameterHint",
                           "when": "editorTextFocus && parameterHintsMultipleSignatures && parameterHintsVisible" },
+                          /*
     { "key": "escape", "command": "closeParameterHints", // NOTE: Escape seems to be captured by vim
                           "when": "editorTextFocus && parameterHintsVisible" },
+                          */
 
     { "key": "ctrl+j",  "command": "workbench.action.quickOpenNavigateNext",
                            "when": "inQuickOpen" },
