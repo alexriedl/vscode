@@ -2,7 +2,7 @@
 
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 SCRIPT_NAME="$(basename $0)"
-VSCODE="code-insiders"
+VSCODE="code"
 
 sub_save() {
   ${VSCODE} --list-extensions > extensions
