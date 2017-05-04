@@ -27,6 +27,11 @@ sub_help() {
   printf "
 Usage:
   ./${SCRIPT_NAME} <subcommand> [options]
+
+Subcommands:
+  save      Write all current extensions to extensions file
+  install   Read extensions file, and install all extensions from it
+  sync      Installs all extensions in extensions file, then writes all current extensions back to that file
 \n\n"
 }
 
