@@ -256,5 +256,10 @@
         "workbench.action.terminal.scrollUp",
         "workbench.action.terminal.scrollUpPage",
         "workbench.action.terminal.toggleTerminal"
-    ]
+    ],
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#0079ce",
+        "statusBar.noFolderBackground": "#0079ce",
+        "statusBar.debuggingBackground": "#0079ce"
+    }
 }
