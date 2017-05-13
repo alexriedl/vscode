@@ -6,11 +6,12 @@ emilast.LogFileHighlighter
 geddski.macros
 gerane.Theme-FlatlandMonokai
 jmrog.vscode-nuget-package-manager
+keyring.Lua
 mattn.OpenVim
 mauve.terraform
-ms-vscode.PowerShell
 ms-vscode.cpptools
 ms-vscode.csharp
+ms-vscode.PowerShell
 robertohuertasm.vscode-icons
 vscodevim.vim
 waderyan.gitblame
