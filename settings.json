@@ -11,7 +11,7 @@
     // Plugin Settings
     "csharp.suppressDotnetRestoreNotification": true,
     "git.autofetch": false,
-    "python.linting.enabled": false,
+    "python.linting.enabled": true,
     "typescript.check.tscVersion": false,
     "vsicons.dontShowNewVersionMessage": true,
 
@@ -19,12 +19,13 @@
     "debug.inlineValues": true,
     "diffEditor.renderSideBySide": true,
     "editor.autoClosingBrackets": false,
-    "editor.codeLens": false,
+    "editor.codeLens": true,
     "editor.fontFamily": "'Consolas', 'Droid Sans Mono', 'Courier New', monospace, 'Droid Sans Fallback'",
     "editor.fontSize": 12,
     "editor.renderWhitespace": "boundary",
     "editor.rulers": [ 120 ],
     "editor.tabSize": 2,
+    "editor.wordWrap": "on",
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
     "window.menuBarVisibility": "toggle",
@@ -41,16 +42,17 @@
     // File Explorer Stuffs
     "explorer.openEditors.visible": 0,
     "files.exclude": {
+        ".vs": true,
         "**/bin": true,
-        "**/obj": true,
-        "**/node_modules": true,
         "**/bower_components": true,
-        "**/wwwroot": true,
-        ".vs": true
+        "**/node_modules": true,
+        "**/obj": true,
+        "**/wwwroot": true
     },
 
     // Vim Setting
     "vim.autoindent": true,
+    "vim.easymotion": true,
     "vim.hlsearch": true,
     "vim.leader": ",",
     "vim.textwidth": 100,
@@ -60,16 +62,13 @@
     // Status Bar Color
     "vim.statusBarColorControl": true,
     "vim.statusBarColors": {
-        "normal": "#0079ce",
         "insert": "#007f3f",
+        "normal": "#0079ce",
+        "replace": "#000000",
         "visual": "#5f00af",
-        "visualline": "#86592d",
         "visualblock": "#a02f2f",
-        "replace": "#000000"
+        "visualline": "#86592d"
     },
-
-    // Easy Motion Settings
-    "vim.easymotion": true,
 
     // Special Vim Keybindings
     "vim.insertModeKeyBindingsNonRecursive": [
@@ -85,10 +84,6 @@
     ],
     "vim.otherModesKeyBindingsNonRecursive": [
         // Move on wrapped lines in an expected way
-        // Visual mode is broken with this on
-        // https://github.com/VSCodeVim/Vim/issues/1377 (Selection messing up while moving)
-        // https://github.com/VSCodeVim/Vim/issues/1323 (Cursor position issue)
-        /*
         {
             "before": ["k"],
             "after": ["g", "k"]
@@ -97,7 +92,6 @@
             "before": ["j"],
             "after": ["g", "j"]
         },
-        */
         // Save and close
         {
             "before": ["Z", "Z"],
