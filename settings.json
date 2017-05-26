@@ -52,9 +52,14 @@
 
     // Vim Setting
     "vim.autoindent": true,
+    "vim.disableAnnoyingGcMessage": true,
+    "vim.disableAnnoyingNeovimMessage": true,
     "vim.easymotion": true,
+    "vim.enableNeovim": true,
+    "vim.foldfix": true,
     "vim.hlsearch": true,
     "vim.leader": ",",
+    "vim.neovimPath": "/usr/bin/nvim",
     "vim.textwidth": 100,
     "vim.useSolidBlockCursor": false,
     "vim.useSystemClipboard": true,
@@ -83,6 +88,11 @@
         }
     ],
     "vim.otherModesKeyBindingsNonRecursive": [
+        // Toggle folds
+        {
+            "before": ["space"],
+            "after": ["z", "a"]
+        },
         // Move on wrapped lines in an expected way
         {
             "before": ["k"],
