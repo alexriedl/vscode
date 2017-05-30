@@ -157,6 +157,12 @@
                 { "command": "editor.action.goToImplementation" }
             ]
         },
+        {
+            "before": ["g", "r"],
+            "commands": [
+                { "command": "editor.action.referenceSearch.trigger" }
+            ]
+        },
         // Easy motion shortcuts
         { // Search for character (all directions)
             "before": ["leader", "s"],
