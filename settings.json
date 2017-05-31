@@ -22,6 +22,7 @@
     "editor.codeLens": true,
     "editor.fontFamily": "'Consolas', 'Droid Sans Mono', 'Courier New', monospace, 'Droid Sans Fallback'",
     "editor.fontSize": 12,
+    "editor.renderLineHighlight": "all",
     "editor.renderWhitespace": "boundary",
     "editor.rulers": [ 120 ],
     "editor.tabSize": 2,
