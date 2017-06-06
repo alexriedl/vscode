@@ -12,6 +12,7 @@
     "csharp.suppressDotnetRestoreNotification": true,
     "git.autofetch": false,
     "python.linting.enabled": true,
+    "python.pythonPath": "python3",
     "typescript.check.tscVersion": false,
     "vsicons.dontShowNewVersionMessage": true,
 
