@@ -10,6 +10,7 @@
 
     // Plugin Settings
     "csharp.suppressDotnetRestoreNotification": true,
+    "extensions.autoUpdate": false,
     "git.autofetch": false,
     "python.linting.enabled": true,
     "python.pythonPath": "python3",
@@ -23,6 +24,7 @@
     "editor.codeLens": true,
     "editor.fontFamily": "'Consolas', 'Droid Sans Mono', 'Courier New', monospace, 'Droid Sans Fallback'",
     "editor.fontSize": 12,
+    "editor.minimap.enabled": false,
     "editor.renderLineHighlight": "all",
     "editor.renderWhitespace": "boundary",
     "editor.rulers": [ 120 ],
@@ -39,7 +41,7 @@
 
     // Suggestions
     "editor.acceptSuggestionOnCommitCharacter": false,
-    "editor.acceptSuggestionOnEnter": false,
+    "editor.acceptSuggestionOnEnter": "off",
 
     // File Explorer Stuffs
     "explorer.openEditors.visible": 0,
