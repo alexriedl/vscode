@@ -92,11 +92,6 @@
         }
     ],
     "vim.otherModesKeyBindingsNonRecursive": [
-        // Toggle folds
-        {
-            "before": ["space"],
-            "after": ["z", "a"]
-        },
         // Move on wrapped lines in an expected way
         {
             "before": ["k"],
