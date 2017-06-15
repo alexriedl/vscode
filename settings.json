@@ -25,6 +25,7 @@
     "editor.fontFamily": "'Consolas', 'Droid Sans Mono', 'Courier New', monospace, 'Droid Sans Fallback'",
     "editor.fontSize": 12,
     "editor.minimap.enabled": false,
+    "editor.multiCursorModifier": "ctrlCmd",
     "editor.renderIndentGuides": false,
     "editor.renderLineHighlight": "all",
     "editor.renderWhitespace": "boundary",
