@@ -67,7 +67,6 @@
     "vim.leader": ",",
     "vim.neovimPath": "/usr/bin/nvim",
     "vim.textwidth": 100,
-    "vim.useSolidBlockCursor": false,
     "vim.useSystemClipboard": true,
 
     // Status Bar Color
