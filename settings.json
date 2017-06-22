@@ -34,7 +34,7 @@
     "editor.wordWrap": "on",
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
-    "window.menuBarVisibility": "toggle",
+    "window.menuBarVisibility": "hidden",
     "window.title": "${dirty}${rootName}${separator}${activeEditorShort}",
     "workbench.colorTheme": "Flatland Monokai",
     "workbench.editor.tabCloseButton": "off",
@@ -70,7 +70,7 @@
     "vim.useSystemClipboard": true,
 
     // Status Bar Color
-    "vim.statusBarColorControl": true,
+    "vim.statusBarColorControl": false,
     "vim.statusBarColors": {
         "insert": "#007f3f",
         "normal": "#0079ce",
