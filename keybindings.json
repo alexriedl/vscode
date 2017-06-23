@@ -27,16 +27,7 @@
     { "key": "alt+h", "command": "editor.action.marker.prev",
                          "when": "editorFocus && !editorReadonly" },
 
-    { "key": "alt+j", "command": "macros.fastMoveDown",
-                         "when": "editorFocus" },
-    { "key": "alt+k", "command": "macros.fastMoveUp",
-                         "when": "editorFocus" },
-
     // File explorer
-    { "key": "j",       "command": "list.focusDown",
-                           "when": "listFocus" },
-    { "key": "k",       "command": "list.focusUp",
-                           "when": "listFocus" },
     { "key": "s",       "command": "explorer.openToSide",
                            "when": "listFocus" },
     { "key": "m a",     "command": "explorer.newFile",
@@ -49,17 +40,6 @@
                            "when": "explorerViewletFocus && explorerViewletVisible" },
     { "key": "m d",     "command": "deleteFile",
                            "when": "explorerViewletFocus && explorerViewletVisible" },
-    { "key": "x",       "command": "list.collapse",
-                           "when": "listFocus" },
-    { "key": "shift+x", "command": "workbench.files.action.collapseExplorerFolders",
-                           "when": "explorerViewletFocus && explorerViewletVisible" },
-    { "key": "g g",     "command": "list.focusFirst",
-                           "when": "explorerViewletFocus && explorerViewletVisible" },
-    { "key": "shift+g", "command": "list.focusLast",
-                           "when": "explorerViewletFocus && explorerViewletVisible" },
-    { "key": "m c",     "command": "macros.duplicateFile",
-                           "when": "explorerViewletFocus && explorerViewletVisible" },
-
     { "key": "ctrl+f",  "command": "workbench.files.action.focusFilesExplorer" },
 
     // Suggestions

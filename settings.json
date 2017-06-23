@@ -194,27 +194,6 @@
         }
     ],
 
-    "macros": {
-        "duplicateFile": [
-            "filesExplorer.copy",
-            "filesExplorer.paste"
-        ],
-        "fastMoveDown": [
-            "extension.vim_down",
-            "extension.vim_down",
-            "extension.vim_down",
-            "extension.vim_down",
-            "extension.vim_down"
-        ],
-        "fastMoveUp": [
-            "extension.vim_up",
-            "extension.vim_up",
-            "extension.vim_up",
-            "extension.vim_up",
-            "extension.vim_up"
-        ]
-    },
-
     // Terminal
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.shell.linux": "bash",
