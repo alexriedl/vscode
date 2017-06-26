@@ -58,7 +58,6 @@
 
     // Vim Setting
     "vim.autoindent": true,
-    "vim.disableAnnoyingGcMessage": true,
     "vim.disableAnnoyingNeovimMessage": true,
     "vim.easymotion": true,
     "vim.enableNeovim": true,
@@ -142,14 +141,6 @@
             "commands": [
                 { "command": "workbench.action.keepEditor" }
             ]
-        },
-        // Fix line above when using sized 2 tabs (Temporary fix until this bug resolved)
-        {
-            "before": ["O"],
-            "commands": [
-                { "command": "editor.action.insertLineBefore" }
-            ],
-            "after": ["i"]
         },
         {
             "before": ["g", "i"],
