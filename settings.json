@@ -40,7 +40,7 @@
     "workbench.colorTheme": "Flatland Monokai",
     "workbench.editor.tabCloseButton": "off",
     "workbench.iconTheme": "vscode-icons",
-    "workbench.welcome.enabled": false,
+    "workbench.startupEditor": "none",
 
     // Suggestions
     "editor.acceptSuggestionOnCommitCharacter": false,

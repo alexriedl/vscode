@@ -12,6 +12,7 @@ mauve.terraform
 ms-vscode.cpptools
 ms-vscode.csharp
 ms-vscode.PowerShell
+msjsdiag.debugger-for-chrome
 robertohuertasm.vscode-icons
 slevesque.vscode-hexdump
 vscodevim.vim
