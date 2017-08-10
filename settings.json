@@ -15,7 +15,6 @@
     "gitblame.ignoreWhitespace": true,
     "python.linting.enabled": true,
     "python.pythonPath": "python3",
-    "typescript.check.tscVersion": false,
     "vsicons.dontShowNewVersionMessage": true,
 
     // Editor Stuffs
@@ -35,6 +34,8 @@
     "editor.wordWrap": "on",
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
+    "markdown.preview.scrollEditorWithPreview": false,
+    "markdown.preview.scrollPreviewWithEditorSelection": false,
     "window.menuBarVisibility": "hidden",
     "window.title": "${dirty}${rootName}${separator}${activeEditorShort}",
     "workbench.colorTheme": "Flatland Monokai",
