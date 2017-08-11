@@ -9,6 +9,7 @@
     },
 
     // Plugin Settings
+    "C_Cpp.intelliSenseEngine": "Tag Parser",
     "csharp.suppressDotnetRestoreNotification": true,
     "extensions.autoUpdate": false,
     "git.autofetch": false,
