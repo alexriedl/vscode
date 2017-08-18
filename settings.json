@@ -8,6 +8,8 @@
         "editor.tabSize": 4
     },
 
+    "dotnet-test-explorer.enableTelemetry": false,
+
     // Plugin Settings
     "C_Cpp.intelliSenseEngine": "Tag Parser",
     "csharp.suppressDotnetRestoreNotification": true,
