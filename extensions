@@ -5,7 +5,6 @@ donjayamanne.githistory
 donjayamanne.python
 emilast.LogFileHighlighter
 gerane.Theme-FlatlandMonokai
-jmrog.vscode-nuget-package-manager
 keyring.Lua
 mattn.OpenVim
 mauve.terraform
@@ -15,6 +14,7 @@ ms-vscode.PowerShell
 msjsdiag.debugger-for-chrome
 robertohuertasm.vscode-icons
 slevesque.vscode-hexdump
+tintoy.msbuild-project-tools
 vscodevim.vim
 waderyan.gitblame
 wayou.vscode-todo-highlight
