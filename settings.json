@@ -8,6 +8,10 @@
         "editor.tabSize": 4
     },
 
+    "dotnet-test-explorer.enableTelemetry": false,
+    "dotnet-test-explorer.build": false,
+    "dotnet-test-explorer.restore": false,
+
     // Plugin Settings
     "C_Cpp.intelliSenseEngine": "Tag Parser",
     "csharp.suppressDotnetRestoreNotification": true,
@@ -17,6 +21,23 @@
     "python.linting.enabled": true,
     "python.pythonPath": "python3",
     "vsicons.dontShowNewVersionMessage": true,
+
+    "todohighlight.keywords": [
+        {
+            "text": "TODO:",
+            "color": "green"
+        },
+        {
+            "text": "NOTE:",
+            "backgroundColor": "green",
+            "color": "black"
+        },
+        {
+            "text": "IMPORTANT:",
+            "color": "white",
+            "backgroundColor": "red"
+        }
+    ],
 
     // Editor Stuffs
     "debug.inlineValues": true,
