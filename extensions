@@ -3,6 +3,7 @@ Pendrica.Chef
 PeterJausovec.vscode-docker
 donjayamanne.githistory
 donjayamanne.python
+eamodio.gitlens
 emilast.LogFileHighlighter
 formulahendry.dotnet-test-explorer
 gerane.Theme-FlatlandMonokai
@@ -17,5 +18,4 @@ robertohuertasm.vscode-icons
 slevesque.vscode-hexdump
 tintoy.msbuild-project-tools
 vscodevim.vim
-waderyan.gitblame
 wayou.vscode-todo-highlight

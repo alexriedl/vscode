@@ -17,7 +17,7 @@
     "csharp.suppressDotnetRestoreNotification": true,
     "extensions.autoUpdate": false,
     "git.autofetch": false,
-    "gitblame.ignoreWhitespace": true,
+    "gitlens.codeLens.enabled": false,
     "python.linting.enabled": true,
     "python.pythonPath": "python3",
     "vsicons.dontShowNewVersionMessage": true,
