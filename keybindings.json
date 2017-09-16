@@ -40,9 +40,10 @@
                                 "when": "explorerViewletFocus && explorerViewletVisible" },
     { "key": "m d",          "command": "deleteFile",
                                 "when": "explorerViewletFocus && explorerViewletVisible" },
-    { "key": "ctrl+f",       "command": "workbench.files.action.focusFilesExplorer" },
     { "key": "ctrl+shift+x", "command": "workbench.files.action.collapseExplorerFolders",
                                 "when": "explorerViewletFocus && explorerViewletVisible" },
+    { "key": "ctrl+f",       "command": "workbench.files.action.focusFilesExplorer" },
+    { "key": "ctrl+shift+f", "command": "workbench.action.toggleSidebarVisibility" },
 
     // Suggestions
     { "key": "ctrl+j",  "command": "selectNextSuggestion",
