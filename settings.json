@@ -27,7 +27,7 @@
     "todohighlight.keywords": [
         {
             "text": "TODO:",
-            "color": "#00aa00",
+            "color": "#007700",
             "backgroundColor": "#ffcc00",
             "border": "1px solid #000000",
             "borderRadius": "2px"
