@@ -22,20 +22,38 @@
     "python.pythonPath": "python3",
     "vsicons.dontShowNewVersionMessage": true,
 
+
+    "todohighlight.toggleURI": true,
     "todohighlight.keywords": [
         {
             "text": "TODO:",
-            "color": "green"
+            "color": "#00aa00",
+            "backgroundColor": "#ffcc00",
+            "border": "1px solid #000000",
+            "borderRadius": "2px"
         },
         {
             "text": "NOTE:",
-            "backgroundColor": "green",
-            "color": "black"
+            "color": "#000000",
+            "backgroundColor": "#00cc00",
+            "border": "1px solid #000000",
+            "borderRadius": "2px"
         },
         {
             "text": "IMPORTANT:",
-            "color": "white",
-            "backgroundColor": "red"
+            "color": "#ffffff",
+            "backgroundColor": "#ff0000",
+            "border": "1px solid #000000",
+            "borderRadius": "2px",
+            "isWholeLine": true
+        },
+        {
+            "text": "@GAP",
+            "color": "#ffffff",
+            "backgroundColor": "purple",
+            "border": "1px solid #000000",
+            "borderRadius": "2px",
+            "isWholeLine": true
         }
     ],
 
@@ -120,7 +138,7 @@
     ],
     "vim.otherModesKeyBindingsNonRecursive": [
         // Move on wrapped lines in an expected way
-        /*
+/* // NOTE: Column Edit is broken when this is enabled
         {
             "before": ["k"],
             "after": ["g", "k"]
@@ -129,7 +147,7 @@
             "before": ["j"],
             "after": ["g", "j"]
         },
-        */
+ */
         // Save and close
         {
             "before": ["Z", "Z"],
