@@ -42,8 +42,10 @@
                                 "when": "explorerViewletFocus && explorerViewletVisible" },
     { "key": "ctrl+shift+x", "command": "workbench.files.action.collapseExplorerFolders",
                                 "when": "explorerViewletFocus && explorerViewletVisible" },
-    { "key": "ctrl+f",       "command": "workbench.files.action.focusFilesExplorer" },
-    { "key": "ctrl+shift+t", "command": "workbench.action.toggleSidebarVisibility" },
+    { "key": "ctrl+f",       "command": "workbench.files.action.focusFilesExplorer",
+                                "when": "!explorerViewletFocus" },
+    { "key": "ctrl+f",       "command": "workbench.action.toggleSidebarVisibility",
+                                "when": "explorerViewletFocus && explorerViewletVisible" },
 
     // Suggestions
     { "key": "ctrl+j",  "command": "selectNextSuggestion",
@@ -55,10 +57,6 @@
                           "when": "editorTextFocus && parameterHintsMultipleSignatures && parameterHintsVisible" },
     { "key": "alt+k",  "command": "showPrevParameterHint",
                           "when": "editorTextFocus && parameterHintsMultipleSignatures && parameterHintsVisible" },
-                          /*
-    { "key": "escape", "command": "closeParameterHints", // NOTE: Escape seems to be captured by vim
-                          "when": "editorTextFocus && parameterHintsVisible" },
-                          */
 
     { "key": "ctrl+j",  "command": "workbench.action.quickOpenNavigateNext",
                            "when": "inQuickOpen" },
