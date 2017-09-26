@@ -27,31 +27,39 @@
     "todohighlight.keywords": [
         {
             "text": "TODO:",
-            "color": "#007700",
-            "backgroundColor": "#ffcc00",
-            "border": "1px solid #000000",
+            "color": "#070",
+            "backgroundColor": "#FC0",
+            "border": "1px solid #000",
             "borderRadius": "2px"
         },
         {
             "text": "NOTE:",
-            "color": "#000000",
-            "backgroundColor": "#00cc00",
-            "border": "1px solid #000000",
+            "color": "#000",
+            "backgroundColor": "#0C0",
+            "border": "1px solid #000",
             "borderRadius": "2px"
         },
         {
             "text": "IMPORTANT:",
-            "color": "#ffffff",
-            "backgroundColor": "#ff0000",
-            "border": "1px solid #000000",
+            "color": "#FFF",
+            "backgroundColor": "#F00",
+            "border": "1px solid #000",
             "borderRadius": "2px",
             "isWholeLine": true
         },
         {
             "text": "@GAP",
-            "color": "#ffffff",
+            "color": "#FFF",
             "backgroundColor": "purple",
-            "border": "1px solid #000000",
+            "border": "1px solid #000",
+            "borderRadius": "2px",
+            "isWholeLine": true
+        },
+        {
+            "text": "tslint:disable",
+            "color": "#FFF",
+            "backgroundColor": "#000",
+            "border": "1px solid #FC0",
             "borderRadius": "2px",
             "isWholeLine": true
         }
