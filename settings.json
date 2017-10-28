@@ -20,8 +20,9 @@
     "gitlens.codeLens.enabled": false,
     "python.linting.enabled": true,
     "python.pythonPath": "python3",
+    "typescript.extension.sortImports.sortMethod": "path",
+    "typescript.extension.sortImports.maxNamedImportsInSingleLine": 10,
     "vsicons.dontShowNewVersionMessage": true,
-
 
     "todohighlight.toggleURI": true,
     "todohighlight.keywords": [
@@ -294,5 +295,26 @@
         "statusBar.background": "#0079ce",
         "statusBar.noFolderBackground": "#0079ce",
         "statusBar.debuggingBackground": "#0079ce"
+    },
+    "msbuildProjectTools": {
+        "logging": {
+            "level": "Information",
+            "seq": {},
+            "file": "",
+            "trace": false
+        },
+        "language": {
+            "disableFeature": {},
+            "useClassicProvider": false,
+            "disable": {
+                "hover": false
+            }
+        },
+        "nuget": {
+            "newestVersionsFirst": true,
+            "includePreRelease": true,
+            "disablePrefetch": false
+        },
+        "schemaVersion": 1
     }
 }

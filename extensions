@@ -11,6 +11,7 @@ gerane.Theme-FlatlandMonokai
 keyring.Lua
 mattn.OpenVim
 mauve.terraform
+miclo.sort-typescript-imports
 ms-vscode.cpptools
 ms-vscode.csharp
 ms-vscode.PowerShell
