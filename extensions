@@ -14,10 +14,10 @@ mauve.terraform
 miclo.sort-typescript-imports
 ms-vscode.cpptools
 ms-vscode.csharp
-ms-vscode.PowerShell
 msjsdiag.debugger-for-chrome
 robertohuertasm.vscode-icons
 slevesque.vscode-hexdump
+timonwong.shellcheck
 tintoy.msbuild-project-tools
 vscodevim.vim
 wayou.vscode-todo-highlight

@@ -20,8 +20,9 @@
     "gitlens.codeLens.enabled": false,
     "python.linting.enabled": true,
     "python.pythonPath": "python3",
-    "typescript.extension.sortImports.sortMethod": "path",
+    "shellcheck.customArgs": [ "-x" ],
     "typescript.extension.sortImports.maxNamedImportsInSingleLine": 10,
+    "typescript.extension.sortImports.sortMethod": "path",
     "vsicons.dontShowNewVersionMessage": true,
 
     "todohighlight.toggleURI": true,
