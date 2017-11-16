@@ -8,10 +8,6 @@
         "editor.tabSize": 4
     },
 
-    "dotnet-test-explorer.enableTelemetry": false,
-    "dotnet-test-explorer.build": false,
-    "dotnet-test-explorer.restore": false,
-
     // Plugin Settings
     "C_Cpp.intelliSenseEngine": "Tag Parser",
     "csharp.referencesCodeLens.enabled": false,
@@ -22,8 +18,8 @@
     "python.linting.enabled": true,
     "python.pythonPath": "python3",
     "shellcheck.customArgs": [ "-x" ],
-    "typescript.extension.sortImports.maxNamedImportsInSingleLine": 10,
-    "typescript.extension.sortImports.sortMethod": "path",
+    "typescriptHero.resolver.multiLineTrailingComma": false,
+    "typescriptHero.resolver.multiLineWrapThreshold": 120,
     "vsicons.dontShowNewVersionMessage": true,
 
     "todohighlight.toggleURI": true,
@@ -115,7 +111,6 @@
 
     // Vim Setting
     "vim.autoindent": true,
-    "vim.disableAnnoyingNeovimMessage": true,
     "vim.easymotion": true,
     "vim.enableNeovim": true,
     "vim.foldfix": true,
@@ -150,7 +145,6 @@
     ],
     "vim.otherModesKeyBindingsNonRecursive": [
         // Move on wrapped lines in an expected way
-/* // NOTE: Column Edit is broken when this is enabled
         {
             "before": ["k"],
             "after": ["g", "k"]
@@ -159,7 +153,6 @@
             "before": ["j"],
             "after": ["g", "j"]
         },
- */
         // Save and close
         {
             "before": ["Z", "Z"],
