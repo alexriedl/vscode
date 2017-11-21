@@ -90,7 +90,7 @@
     "workbench.colorTheme": "Flatland Monokai",
     "workbench.editor.tabCloseButton": "off",
     "workbench.iconTheme": "vscode-icons",
-    "workbench.panel.location": "bottom",
+    "workbench.panel.location": "right",
     "workbench.startupEditor": "none",
 
     // Suggestions
