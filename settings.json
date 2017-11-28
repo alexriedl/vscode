@@ -287,6 +287,9 @@
         "workbench.action.terminal.scrollUpPage",
         "workbench.action.terminal.toggleTerminal"
     ],
+
+    // Settings forced by vscode/plugins
+
     "workbench.colorCustomizations": {
         "statusBar.background": "#0079ce",
         "statusBar.noFolderBackground": "#0079ce",
@@ -312,5 +315,15 @@
             "disablePrefetch": false
         },
         "schemaVersion": 1
+    },
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressUpdateNotice": true,
+        "suppressWelcomeNotice": true
     }
 }
