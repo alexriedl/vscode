@@ -2,7 +2,13 @@
 
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 SCRIPT_NAME="$(basename $0)"
+
 VSCODE="code"
+if [[ "${SCRIPT_DIR}" == *"Code - Insiders"* ]]; then
+  VSCODE="code-insiders"
+fi
+
+printf "Using '%s' as vscode binary\n" "${VSCODE}"
 
 sub_save() {
   ${VSCODE} --list-extensions > extensions
@@ -33,14 +39,6 @@ Subcommands:
   install   Read extensions file, and install all extensions from it
   sync      Installs all extensions in extensions file, then writes all current extensions back to that file
 \n\n"
-}
-
-sub_test() {
-  if [[ "${SCRIPT_DIR}" == *"Code - Insiders"* ]]; then
-    echo "INSIDERS"
-  else
-    echo "CODE"
-  fi
 }
 
 subcommand=$1
