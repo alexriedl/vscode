@@ -35,6 +35,14 @@ Subcommands:
 \n\n"
 }
 
+sub_test() {
+  if [[ "${SCRIPT_DIR}" == *"Code - Insiders"* ]]; then
+    echo "INSIDERS"
+  else
+    echo "CODE"
+  fi
+}
+
 subcommand=$1
 case $subcommand in
   "" | "-h" | "--help")
@@ -52,8 +60,8 @@ case $subcommand in
 
     # Report unknown subcommands
     if [ $? = 127 ]; then
-      printf "Error: '$subcommand' is not a known subcommand.\n" >&2
-      printf "  Run './$ProgName --help' for a list of known subcommands.\n" >&2
+      printf "Error: '%s' is not a known subcommand.\n" "${subcommand}" >&2
+      printf "  Run './%s --help' for a list of known subcommands.\n" "${SCRIPT_NAME}" >&2
       exit 1
     fi
     ;;
