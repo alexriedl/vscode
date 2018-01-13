@@ -13,6 +13,7 @@
     "csharp.referencesCodeLens.enabled": false,
     "csharp.suppressDotnetRestoreNotification": true,
     "extensions.autoUpdate": false,
+    "extensions.ignoreRecommendations": true,
     "git.autofetch": false,
     "gitlens.codeLens.enabled": false,
     "python.linting.enabled": true,
