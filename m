@@ -2,7 +2,13 @@
 
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 SCRIPT_NAME="$(basename $0)"
+
 VSCODE="code"
+if [[ "${SCRIPT_DIR}" == *"Code - Insiders"* ]]; then
+  VSCODE="code-insiders"
+fi
+
+printf "Using '%s' as vscode binary\n" "${VSCODE}"
 
 sub_save() {
   ${VSCODE} --list-extensions > extensions
@@ -52,8 +58,8 @@ case $subcommand in
 
     # Report unknown subcommands
     if [ $? = 127 ]; then
-      printf "Error: '$subcommand' is not a known subcommand.\n" >&2
-      printf "  Run './$ProgName --help' for a list of known subcommands.\n" >&2
+      printf "Error: '%s' is not a known subcommand.\n" "${subcommand}" >&2
+      printf "  Run './%s --help' for a list of known subcommands.\n" "${SCRIPT_NAME}" >&2
       exit 1
     fi
     ;;

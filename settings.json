@@ -80,6 +80,7 @@
     "editor.rulers": [ 120 ],
     "editor.tabSize": 2,
     "editor.wordWrap": "on",
+    "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
@@ -120,6 +121,7 @@
     "vim.neovimPath": "/usr/bin/nvim",
     "vim.textwidth": 100,
     "vim.useSystemClipboard": true,
+    "vim.cmdLineInitialColon": true,
 
     // Status Bar Color
     "vim.statusBarColorControl": false,

@@ -1,0 +1,20 @@
+{
+  "New Class": {
+    "prefix": "class",
+    "description": "Creates base code for a class",
+    "body": [
+      "namespace ${TM_DIRECTORY/.*\\/(src|tests)\\/(.*)$/${2}/}",
+      "{",
+      "\tpublic class ${TM_FILENAME_BASE}",
+      "\t{",
+      "\t\tpublic ${TM_FILENAME_BASE}()",
+      "\t\t{",
+      "\t\t}",
+      "",
+      "\t\t$2",
+      "\t}",
+      "}"
+    ]
+  }
+}
+
