@@ -8,6 +8,8 @@
         "editor.tabSize": 4
     },
 
+    "terminal.external.linuxExec": "alacritty",
+
     // Plugin Settings
     "C_Cpp.intelliSenseEngine": "Tag Parser",
     "csharp.referencesCodeLens.enabled": false,
@@ -19,8 +21,8 @@
     "python.linting.enabled": true,
     "python.pythonPath": "python3",
     "shellcheck.customArgs": [ "-x" ],
-    "typescriptHero.resolver.multiLineTrailingComma": false,
-    "typescriptHero.resolver.multiLineWrapThreshold": 120,
+    "typescriptHero.imports.multiLineTrailingComma": false,
+    "typescriptHero.imports.multiLineWrapThreshold": 120,
     "vsicons.dontShowNewVersionMessage": true,
 
     "todohighlight.toggleURI": true,
@@ -72,6 +74,7 @@
     "editor.codeLens": true,
     "editor.fontFamily": "'Consolas', 'Droid Sans Mono', 'Courier New', monospace, 'Droid Sans Fallback'",
     "editor.fontSize": 12,
+    "editor.lineNumbers": "on",
     "editor.minimap.enabled": false,
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.renderIndentGuides": false,
@@ -292,32 +295,10 @@
     ],
 
     // Settings forced by vscode/plugins
-
     "workbench.colorCustomizations": {
         "statusBar.background": "#0079ce",
         "statusBar.noFolderBackground": "#0079ce",
         "statusBar.debuggingBackground": "#0079ce"
-    },
-    "msbuildProjectTools": {
-        "logging": {
-            "level": "Information",
-            "seq": {},
-            "file": "",
-            "trace": false
-        },
-        "language": {
-            "disableFeature": {},
-            "useClassicProvider": false,
-            "disable": {
-                "hover": false
-            }
-        },
-        "nuget": {
-            "newestVersionsFirst": true,
-            "includePreRelease": true,
-            "disablePrefetch": false
-        },
-        "schemaVersion": 1
     },
     "gitlens.advanced.messages": {
         "suppressCommitHasNoPreviousCommitWarning": false,
