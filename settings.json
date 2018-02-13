@@ -1,13 +1,5 @@
 // Place your settings in this file to overwrite the default settings
 {
-    // Language specific settings
-    "[cpp]": {
-        "editor.tabSize": 4
-    },
-    "[c]": {
-        "editor.tabSize": 4
-    },
-
     "terminal.external.linuxExec": "alacritty",
 
     // Plugin Settings
@@ -94,7 +86,7 @@
     "window.menuBarVisibility": "hidden",
     "window.newWindowDimensions": "maximized",
     "window.title": "${dirty}${rootName}${separator}${activeEditorShort}",
-    "workbench.colorTheme": "Flatland Monokai",
+    "workbench.colorTheme": "Gruvbox Dark Hard",
     "workbench.editor.tabCloseButton": "off",
     "workbench.iconTheme": "vscode-icons",
     "workbench.startupEditor": "none",
@@ -249,7 +241,11 @@
     "terminal.integrated.shell.linux": "bash",
     "terminal.integrated.commandsToSkipShell": [
         "workbench.action.closePanel",
-        "workbench.action.navigateUp",
+        "extension.vim_navigateUp",
+        "extension.vim_navigateDown",
+        "extension.vim_navigateLeft",
+        "extension.vim_navigateRight",
+        "workbench.files.action.focusFilesExplorer",
 
         // Default
         "editor.action.toggleTabFocusMode",
