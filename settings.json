@@ -18,6 +18,7 @@
     "extensions.ignoreRecommendations": true,
     "git.autofetch": false,
     "gitlens.codeLens.enabled": false,
+    "gitlens.showWhatsNewAfterUpgrades": false,
     "python.linting.enabled": true,
     "python.pythonPath": "python3",
     "shellcheck.customArgs": [ "-x" ],
