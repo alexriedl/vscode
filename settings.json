@@ -109,6 +109,7 @@
 
     // Vim Setting
     "vim.autoindent": true,
+    "vim.cmdLineInitialColon": true,
     "vim.easymotion": true,
     "vim.enableNeovim": true,
     "vim.foldfix": true,
@@ -117,18 +118,6 @@
     "vim.neovimPath": "/usr/bin/nvim",
     "vim.textwidth": 100,
     "vim.useSystemClipboard": true,
-    "vim.cmdLineInitialColon": true,
-
-    // Status Bar Color
-    "vim.statusBarColorControl": false,
-    "vim.statusBarColors": {
-        "insert": "#007f3f",
-        "normal": "#0079ce",
-        "replace": "#000000",
-        "visual": "#5f00af",
-        "visualblock": "#a02f2f",
-        "visualline": "#86592d"
-    },
 
     // Special Vim Keybindings
     "vim.insertModeKeyBindingsNonRecursive": [
@@ -291,12 +280,35 @@
         "workbench.action.terminal.toggleTerminal"
     ],
 
-    // Settings forced by vscode/plugins
-    "workbench.colorCustomizations": {
-        "statusBar.background": "#0079ce",
-        "statusBar.noFolderBackground": "#0079ce",
-        "statusBar.debuggingBackground": "#0079ce"
+    // Status Bar Color
+    // Gruvbox colors: https://github.com/morhetz/gruvbox/blob/master/colors/gruvbox.vim
+    "vim.statusBarColorControl": true,
+    "vim.statusBarColors": {
+        "insert": "#458588", // Blue
+        "normal": "#7c6f64", // Dark
+        "replace": "#689d6a", // Aqua
+        "visual": "#d65d0e", // Orange
+        "visualblock": "#d65d0e", // Orange
+        "visualline": "#d65d0e" // Orange
     },
+
+    // StatusBar settings are forced by vim if the above setting is used
+    "workbench.colorCustomizations": {
+        "activityBar.border": "#000",
+        "editorGroup.border": "#000",
+        "editorGroupHeader.tabsBorder": "#000",
+        "panel.border": "#000",
+        "sideBar.border": "#000",
+        "statusBar.border": "#000",
+        "tab.border": "#000",
+        "titleBar.border": "#000",
+        "statusBar.foreground": "#000",
+        "statusBar.background": "#7c6f64",
+        "statusBar.noFolderBackground": "#7c6f64",
+        "statusBar.debuggingBackground": "#7c6f64"
+    },
+
+    // Settings forced by vscode/plugins
     "gitlens.advanced.messages": {
         "suppressCommitHasNoPreviousCommitWarning": false,
         "suppressCommitNotFoundWarning": false,
