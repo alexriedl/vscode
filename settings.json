@@ -282,7 +282,7 @@
 
     // Status Bar Color
     // Gruvbox colors: https://github.com/morhetz/gruvbox/blob/master/colors/gruvbox.vim
-    "vim.statusBarColorControl": true,
+    "vim.statusBarColorControl": false,
     "vim.statusBarColors": {
         "insert": "#458588", // Blue
         "normal": "#7c6f64", // Dark
