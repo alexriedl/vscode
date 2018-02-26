@@ -1,6 +1,7 @@
 EditorConfig.EditorConfig
 Pendrica.chef
 PeterJausovec.vscode-docker
+cstuder.gitlab-ci-validator
 eamodio.gitlens
 eg2.tslint
 emilast.LogFileHighlighter
@@ -14,8 +15,10 @@ ms-vscode.csharp
 msjsdiag.debugger-for-chrome
 rbbit.typescript-hero
 robertohuertasm.vscode-icons
+romanresh.testcafe-test-runner
 slevesque.vscode-hexdump
 timonwong.shellcheck
+tintoy.msbuild-project-tools
 vscodevim.vim
 wayou.vscode-todo-highlight
 yzhang.markdown-all-in-one
