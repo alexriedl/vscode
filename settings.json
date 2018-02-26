@@ -116,6 +116,7 @@
     "vim.neovimPath": "/usr/bin/nvim",
     "vim.textwidth": 100,
     "vim.useSystemClipboard": true,
+    "vim.sneak": true,
 
     // Special Vim Keybindings
     "vim.insertModeKeyBindingsNonRecursive": [
