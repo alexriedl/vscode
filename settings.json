@@ -1,7 +1,5 @@
 // Place your settings in this file to overwrite the default settings
 {
-    "terminal.external.linuxExec": "alacritty",
-
     // Plugin Settings
     "C_Cpp.intelliSenseEngine": "Tag Parser",
     "csharp.referencesCodeLens.enabled": false,
@@ -226,8 +224,9 @@
     ],
 
     // Terminal
+    "terminal.external.linuxExec": "alacritty",
     "terminal.integrated.cursorBlinking": true,
-    "terminal.integrated.shell.linux": "bash",
+    "terminal.integrated.env.linux": { "TMUX_ATTACH_TO_SESSION": "${workspaceFolderBasename}" },
     "terminal.integrated.commandsToSkipShell": [
         "workbench.action.closePanel",
         "extension.vim_navigateUp",
@@ -318,5 +317,26 @@
         "suppressNoRepositoryWarning": false,
         "suppressUpdateNotice": true,
         "suppressWelcomeNotice": true
+    },
+    "msbuildProjectTools": {
+        "logging": {
+            "level": "Information",
+            "seq": {},
+            "file": "",
+            "trace": false
+        },
+        "language": {
+            "disableFeature": {},
+            "useClassicProvider": false,
+            "disable": {
+                "hover": false
+            }
+        },
+        "nuget": {
+            "newestVersionsFirst": true,
+            "includePreRelease": true,
+            "disablePrefetch": false
+        },
+        "schemaVersion": 1
     }
 }
