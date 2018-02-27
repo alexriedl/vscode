@@ -7,6 +7,15 @@
     { "key": "ctrl+.",       "command": "editor.action.triggerParameterHints",
                                 "when": "editorHasSignatureHelpProvider && editorTextFocus" },
 
+    // Terminal
+    { "key": "ctrl+shift+`", "command": "workbench.action.terminal.newInActiveWorkspace" },
+    { "key": "ctrl+n",       "command": "workbench.action.terminal.focusNext",
+                                "when": "terminalFocus" },
+    { "key": "ctrl+shift+n", "command": "workbench.action.terminal.focusNext",
+                                "when": "terminalFocus" },
+    { "key": "ctrl+shift+f", "command": "workbench.action.terminal.rename",
+                                "when": "terminalFocus" },
+
     // Restart Omnisharp
     { "key": "ctrl+shift+r", "command": "o.restart" },
 
