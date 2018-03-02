@@ -49,6 +49,8 @@
                                 "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus" },
     { "key": "m d",          "command": "deleteFile",
                                 "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus" },
+    { "key": "x",            "command": "list.collapse",
+                                "when": "listFocus && !inputFocus" },
     { "key": "ctrl+shift+x", "command": "workbench.files.action.collapseExplorerFolders",
                                 "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus" },
     { "key": "ctrl+f",       "command": "workbench.files.action.focusFilesExplorer",
