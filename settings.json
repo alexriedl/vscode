@@ -74,6 +74,7 @@
     "editor.renderLineHighlight": "all",
     "editor.renderWhitespace": "boundary",
     "editor.rulers": [ 120 ],
+    "editor.showFoldingControls": "always",
     "editor.tabSize": 2,
     "editor.wordWrap": "on",
     "explorer.confirmDelete": false,
