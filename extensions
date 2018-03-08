@@ -5,6 +5,7 @@ cstuder.gitlab-ci-validator
 eamodio.gitlens
 eg2.tslint
 emilast.LogFileHighlighter
+formulahendry.dotnet-test-explorer
 jdinhlife.gruvbox
 keyring.Lua
 mattn.OpenVim
