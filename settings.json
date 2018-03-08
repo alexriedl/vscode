@@ -82,8 +82,6 @@
     "explorer.confirmDragAndDrop": false,
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
-    "markdown.preview.scrollEditorWithPreview": false,
-    "markdown.preview.scrollPreviewWithEditorSelection": false,
     "window.closeWhenEmpty": true,
     "window.menuBarVisibility": "hidden",
     "window.newWindowDimensions": "maximized",
@@ -91,6 +89,7 @@
     "workbench.colorTheme": "Gruvbox Dark Hard",
     "workbench.editor.tabCloseButton": "off",
     "workbench.iconTheme": "vscode-icons",
+    "workbench.panel.defaultLocation": "right",
     "workbench.startupEditor": "none",
 
     // Suggestions
