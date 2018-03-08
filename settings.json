@@ -1,5 +1,9 @@
 // Place your settings in this file to overwrite the default settings
 {
+    "files.associations": {
+        "*.csproj": "msbuild"
+    },
+
     // Plugin Settings
     "C_Cpp.intelliSenseEngine": "Tag Parser",
     "csharp.referencesCodeLens.enabled": false,
