@@ -7,7 +7,10 @@
     "extensions.autoUpdate": false,
     "extensions.ignoreRecommendations": true,
     "git.autofetch": false,
+    "gitlab-ci-validator.gitLabURL": "https://gitlab.directsupply.cloud",
+    "gitlab-ci-validator.ignoreCertificateErrors": true,
     "gitlens.codeLens.enabled": false,
+    "gitlens.keymap": "none",
     "gitlens.showWhatsNewAfterUpgrades": false,
     "python.linting.enabled": true,
     "python.pythonPath": "python3",
@@ -15,8 +18,6 @@
     "typescriptHero.imports.multiLineTrailingComma": false,
     "typescriptHero.imports.multiLineWrapThreshold": 120,
     "vsicons.dontShowNewVersionMessage": true,
-    "gitlab-ci-validator.gitLabURL": "https://gitlab.directsupply.cloud",
-    "gitlab-ci-validator.ignoreCertificateErrors": true,
 
     "todohighlight.toggleURI": true,
     "todohighlight.keywords": [
