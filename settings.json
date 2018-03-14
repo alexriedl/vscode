@@ -8,6 +8,7 @@
     "C_Cpp.intelliSenseEngine": "Tag Parser",
     "csharp.referencesCodeLens.enabled": false,
     "csharp.suppressDotnetRestoreNotification": true,
+    "csharp.suppressHiddenDiagnostics": false,
     "extensions.autoUpdate": false,
     "extensions.ignoreRecommendations": true,
     "git.autofetch": false,
