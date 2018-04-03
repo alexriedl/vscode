@@ -9,8 +9,6 @@
     "csharp.referencesCodeLens.enabled": false,
     "csharp.suppressDotnetRestoreNotification": true,
     "csharp.suppressHiddenDiagnostics": false,
-    "extensions.autoUpdate": false,
-    "extensions.ignoreRecommendations": true,
     "git.autofetch": false,
     "gitlab-ci-validator.gitLabURL": "https://gitlab.directsupply.cloud",
     "gitlab-ci-validator.ignoreCertificateErrors": true,
@@ -65,6 +63,10 @@
             "isWholeLine": true
         }
     ],
+
+    "extensions.autoUpdate": false,
+    "extensions.ignoreRecommendations": true,
+    "extensions.showRecommendationsOnlyOnDemand": true,
 
     // Editor Stuffs
     "debug.inlineValues": true,
@@ -352,6 +354,8 @@
         "suppressGitVersionWarning": false,
         "suppressLineUncommittedWarning": false,
         "suppressNoRepositoryWarning": false,
+        "suppressResultsExplorerNotice": false,
+        "suppressShowKeyBindingsNotice": true,
         "suppressUpdateNotice": true,
         "suppressWelcomeNotice": true
     },
