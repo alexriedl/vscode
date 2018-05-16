@@ -151,7 +151,9 @@
             "before": ["j"],
             "after": ["g", "j"]
         },
+
         // Save and close
+        /*
         {
             "before": ["Z", "Z"],
             "commands": [
@@ -159,6 +161,8 @@
                 { "command": "workbench.action.closeActiveEditor" }
             ]
         },
+        */
+
         // Clear vim search
         {
             "before": ["leader", "space"],

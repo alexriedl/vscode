@@ -20,10 +20,10 @@
     { "key": "ctrl+shift+r", "command": "o.restart" },
 
     // vim specific keybindings
-    { "key": "ctrl+h", "command": "extension.vim_navigateLeft" },
-    { "key": "ctrl+l", "command": "extension.vim_navigateRight" },
-    { "key": "ctrl+j", "command": "extension.vim_navigateDown" },
-    { "key": "ctrl+k", "command": "extension.vim_navigateUp" },
+    { "key": "ctrl+h", "command": "workbench.action.navigateLeft" },
+    { "key": "ctrl+l", "command": "workbench.action.navigateRight" },
+    { "key": "ctrl+j", "command": "workbench.action.navigateDown" },
+    { "key": "ctrl+k", "command": "workbench.action.navigateUp" },
 
     { "key": "ctrl+m", "command": "workbench.action.closePanel" },
     { "key": "ctrl+t", "command": "workbench.action.showAllSymbols" },
