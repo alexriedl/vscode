@@ -14,6 +14,7 @@
     "gitlab-ci-validator.gitLabURL": "https://gitlab.directsupply.cloud",
     "gitlab-ci-validator.ignoreCertificateErrors": true,
     "gitlens.codeLens.enabled": false,
+    "gitlens.historyExplorer.enabled": true,
     "gitlens.keymap": "none",
     "gitlens.showWhatsNewAfterUpgrades": false,
     "python.linting.enabled": true,

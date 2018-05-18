@@ -13,7 +13,9 @@ mauve.terraform
 ms-python.python
 ms-vscode.cpptools
 ms-vscode.csharp
+ms-vsliveshare.vsliveshare
 msjsdiag.debugger-for-chrome
+pflannery.vscode-versionlens
 rbbit.typescript-hero
 robertohuertasm.vscode-icons
 romanresh.testcafe-test-runner
