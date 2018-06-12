@@ -36,6 +36,14 @@
     { "key": "alt+h", "command": "editor.action.marker.prev",
                          "when": "editorFocus && !editorReadonly" },
 
+    // Grids
+    { "key": "ctrl+|",     "command": "workbench.action.splitEditorRight" },
+    { "key": "ctrl+-",       "command": "workbench.action.splitEditorDown" },
+    { "key": "ctrl+shift+h", "command": "workbench.action.moveEditorToLeftGroup" },
+    { "key": "ctrl+shift+l", "command": "workbench.action.moveEditorToRightGroup" },
+    { "key": "ctrl+shift+j", "command": "workbench.action.moveEditorToBelowGroup" },
+    { "key": "ctrl+shift+k", "command": "workbench.action.moveEditorToAboveGroup" },
+
     // File explorer
     { "key": "s",            "command": "explorer.openToSide",
                                 "when": "explorerViewletFocus && explorerViewletVisible && !inputFocus" },

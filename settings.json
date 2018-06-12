@@ -20,6 +20,7 @@
     "python.linting.enabled": true,
     "python.pythonPath": "python3",
     "shellcheck.customArgs": [ "-x" ],
+    "shellcheck.disableVersionCheck": true,
     "typescriptHero.imports.multiLineTrailingComma": false,
     "typescriptHero.imports.multiLineWrapThreshold": 120,
     "vsicons.dontShowNewVersionMessage": true,
@@ -154,7 +155,6 @@
         },
 
         // Save and close
-        /*
         {
             "before": ["Z", "Z"],
             "commands": [
@@ -162,7 +162,6 @@
                 { "command": "workbench.action.closeActiveEditor" }
             ]
         },
-        */
 
         // Clear vim search
         {
