@@ -73,6 +73,7 @@
 
     // Editor Stuffs
     "debug.inlineValues": true,
+    "debug.toolBarLocation": "docked",
     "diffEditor.renderSideBySide": true,
     "editor.autoClosingBrackets": false,
     "editor.codeLens": true,
