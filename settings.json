@@ -144,7 +144,30 @@
             "after": [ "escape" ]
         }
     ],
-    "vim.otherModesKeyBindingsNonRecursive": [
+    "vim.visualModeKeyBindingsNonRecursive": [
+        // Move on wrapped lines in an expected way
+        {
+            "before": ["k"],
+            "after": ["g", "k"]
+        },
+        {
+            "before": ["j"],
+            "after": ["g", "j"]
+        },
+        // Clear vim search
+        {
+            "before": ["leader", "space"],
+            "commands": [
+                { "command": ":nohl" }
+            ]
+        },
+        // Go to end of line with E
+        {
+            "before": ["E"],
+            "after": ["$"]
+        },
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
         // Move on wrapped lines in an expected way
         {
             "before": ["k"],
