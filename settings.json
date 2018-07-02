@@ -21,7 +21,8 @@
     "python.pythonPath": "python3",
     "shellcheck.customArgs": [ "-x" ],
     "shellcheck.disableVersionCheck": true,
-    "typescriptHero.imports.multiLineTrailingComma": false,
+    "typescript.updateImportsOnFileMove.enabled": "never",
+    "typescriptHero.imports.multiLineTrailingComma": true,
     "typescriptHero.imports.multiLineWrapThreshold": 120,
     "vsicons.dontShowNewVersionMessage": true,
 
@@ -122,7 +123,6 @@
 
     // Vim Setting
     "vim.autoindent": true,
-    "vim.cmdLineInitialColon": true,
     "vim.easymotion": true,
     "vim.enableNeovim": true,
     "vim.foldfix": true,
