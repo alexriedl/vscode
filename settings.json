@@ -371,14 +371,6 @@
 
     // StatusBar settings are forced by vim if the above setting is used
     "workbench.colorCustomizations": {
-        "activityBar.border": "#000",
-        "editorGroup.border": "#000",
-        "editorGroupHeader.tabsBorder": "#000",
-        "panel.border": "#000",
-        "sideBar.border": "#000",
-        "statusBar.border": "#000",
-        "tab.border": "#000",
-        "titleBar.border": "#000",
         "statusBar.foreground": "#000",
         "statusBar.background": "#7c6f64",
         "statusBar.noFolderBackground": "#7c6f64",
