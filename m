@@ -11,7 +11,7 @@ fi
 printf "Using '%s' as vscode binary\n" "${VSCODE}"
 
 sub_save() {
-  ${VSCODE} --list-extensions > extensions
+  ${VSCODE} --list-extensions > "${SCRIPT_DIR}/extensions"
   if [ $? -eq 0 ]; then
     printf "Saved extension list\n"
   else
@@ -20,7 +20,7 @@ sub_save() {
 }
 
 sub_install() {
-  <extensions xargs -I % ${VSCODE} --install-extension %
+  <"${SCRIPT_DIR}/extensions" xargs -I % ${VSCODE} --install-extension %
   printf "Finished installing extensions\n"
 }
 
