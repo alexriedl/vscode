@@ -1,8 +1,6 @@
-EditorConfig.EditorConfig
-Pendrica.chef
-PeterJausovec.vscode-docker
 cstuder.gitlab-ci-validator
 eamodio.gitlens
+EditorConfig.EditorConfig
 eg2.tslint
 emilast.LogFileHighlighter
 formulahendry.dotnet-test-explorer
@@ -10,11 +8,13 @@ jdinhlife.gruvbox
 keyring.Lua
 mattn.OpenVim
 mauve.terraform
+msjsdiag.debugger-for-chrome
 ms-python.python
 ms-vscode.cpptools
 ms-vscode.csharp
 ms-vsliveshare.vsliveshare
-msjsdiag.debugger-for-chrome
+Pendrica.chef
+PeterJausovec.vscode-docker
 pflannery.vscode-versionlens
 rbbit.typescript-hero
 robertohuertasm.vscode-icons
