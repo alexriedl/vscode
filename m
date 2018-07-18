@@ -1,7 +1,7 @@
 #!/bin/bash
 
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-SCRIPT_NAME="$(basename $0)"
+SCRIPT_NAME="$(basename "$0")"
 
 VSCODE="code"
 if [[ "${SCRIPT_DIR}" == *"Code - Insiders"* ]]; then
@@ -11,8 +11,7 @@ fi
 printf "Using '%s' as vscode binary\n" "${VSCODE}"
 
 sub_save() {
-  ${VSCODE} --list-extensions > "${SCRIPT_DIR}/extensions"
-  if [ $? -eq 0 ]; then
+  if ${VSCODE} --list-extensions | sort > "${SCRIPT_DIR}/extensions"; then
     printf "Saved extension list\n"
   else
     printf "Failed to save extension list\n"
@@ -20,25 +19,30 @@ sub_save() {
 }
 
 sub_install() {
-  <"${SCRIPT_DIR}/extensions" xargs -I % ${VSCODE} --install-extension %
+  comm -13 <("${VSCODE}" --list-extensions | sort) <(sort "${SCRIPT_DIR}/extensions") | xargs -I % ${VSCODE} --install-extension %
   printf "Finished installing extensions\n"
+}
+
+sub_uninstall_extra() {
+  comm -13 <(sort "${SCRIPT_DIR}/extensions") <("${VSCODE}" --list-extensions | sort) | xargs -I % ${VSCODE} --uninstall-extension %
+  printf "Finished uninstalling extensions\n"
 }
 
 sub_sync() {
   sub_install
-  sub_save
+  sub_uninstall_extra
 }
 
 sub_help() {
   printf "
 Usage:
-  ./${SCRIPT_NAME} <subcommand> [options]
+  ./%s <subcommand> [options]
 
 Subcommands:
   save      Write all current extensions to extensions file
   install   Read extensions file, and install all extensions from it
   sync      Installs all extensions in extensions file, then writes all current extensions back to that file
-\n\n"
+\n\n" "${SCRIPT_NAME}"
 }
 
 subcommand=$1
@@ -51,9 +55,9 @@ case $subcommand in
     shift
 
     if [ "$1" = "-h" ] || [ "$1" = "--help" ]; then
-      sub_${subcommand}_help
+      "sub_${subcommand}_help"
     else
-      sub_$subcommand $@
+      "sub_$subcommand" "$@"
     fi
 
     # Report unknown subcommands
