@@ -6,7 +6,7 @@
     },
 
     // Plugin Settings
-    "C_Cpp.intelliSenseEngine": "Tag Parser",
+    "C_Cpp.intelliSenseEngine": "Default",
     "csharp.referencesCodeLens.enabled": false,
     "csharp.suppressDotnetRestoreNotification": true,
     "csharp.suppressHiddenDiagnostics": false,
@@ -103,6 +103,8 @@
     "window.title": "${dirty}${rootName}${separator}${activeEditorShort}",
     "window.zoomLevel": 0,
     "workbench.colorTheme": "Gruvbox Dark Hard",
+    "workbench.editor.enablePreview": false,
+    "workbench.editor.enablePreviewFromQuickOpen": false,
     "workbench.editor.tabCloseButton": "off",
     "workbench.iconTheme": "vscode-icons",
     "workbench.panel.defaultLocation": "right",
