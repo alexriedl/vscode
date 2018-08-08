@@ -6,7 +6,7 @@
     },
 
     // Plugin Settings
-    "C_Cpp.intelliSenseEngine": "Tag Parser",
+    "C_Cpp.intelliSenseEngine": "Default",
     "csharp.referencesCodeLens.enabled": false,
     "csharp.suppressDotnetRestoreNotification": true,
     "csharp.suppressHiddenDiagnostics": false,
