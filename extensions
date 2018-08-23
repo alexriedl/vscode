@@ -5,11 +5,9 @@ eg2.tslint
 emilast.LogFileHighlighter
 formulahendry.dotnet-test-explorer
 jdinhlife.gruvbox
-keyring.Lua
 mattn.OpenVim
 mauve.terraform
 msjsdiag.debugger-for-chrome
-ms-python.python
 ms-vscode.cpptools
 ms-vscode.csharp
 ms-vsliveshare.vsliveshare
