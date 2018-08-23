@@ -17,8 +17,6 @@
     "gitlens.historyExplorer.enabled": true,
     "gitlens.keymap": "none",
     "gitlens.showWhatsNewAfterUpgrades": false,
-    "python.linting.enabled": true,
-    "python.pythonPath": "python3",
     "shellcheck.customArgs": [ "-x" ],
     "shellcheck.disableVersionCheck": true,
     "typescript.updateImportsOnFileMove.enabled": "never",
@@ -128,144 +126,88 @@
 
     // Vim Setting
     "vim.autoindent": true,
-    "vim.easymotion": true,
+    "vim.easymotion": false,
     "vim.enableNeovim": true,
     "vim.foldfix": true,
     "vim.hlsearch": true,
     "vim.leader": ",",
+    "vim.sneak": false,
     "vim.textwidth": 100,
     "vim.useSystemClipboard": true,
-    "vim.sneak": false,
 
     // Special Vim Keybindings
-    "vim.insertModeKeyBindingsNonRecursive": [
-        // Easy escape
-        {
-            "before": [ "j", "k" ],
-            "after": [ "escape" ]
-        },
-        {
-            "before": [ "k", "j" ],
-            "after": [ "escape" ]
-        }
-    ],
     "vim.visualModeKeyBindingsNonRecursive": [
         // Move on wrapped lines in an expected way
-        {
-            "before": ["k"],
-            "after": ["g", "k"]
-        },
-        {
-            "before": ["j"],
-            "after": ["g", "j"]
-        },
+        { "before": ["k"], "after": ["g", "k"] },
+        { "before": ["j"], "after": ["g", "j"] },
         // Clear vim search
         {
             "before": ["leader", "space"],
-            "commands": [
-                { "command": ":nohl" }
-            ]
+            "commands": [ ":nohl" ]
         },
         // Go to end of line with E
+        { "before": ["E"], "after": ["$"] },
+
         {
-            "before": ["E"],
-            "after": ["$"]
+            "before": ["g", "f"],
+            "commands": [ "workbench.action.findInFiles" ]
         },
     ],
     "vim.normalModeKeyBindingsNonRecursive": [
         // Move on wrapped lines in an expected way
-        {
-            "before": ["k"],
-            "after": ["g", "k"]
-        },
-        {
-            "before": ["j"],
-            "after": ["g", "j"]
-        },
+        { "before": ["k"], "after": ["g", "k"] },
+        { "before": ["j"], "after": ["g", "j"] },
 
         // Save and close
         {
             "before": ["Z", "Z"],
             "commands": [
-                { "command": "workbench.action.files.save" },
-                { "command": "workbench.action.closeActiveEditor" }
+                 "workbench.action.files.save",
+                 "workbench.action.closeActiveEditor"
             ]
         },
 
         // Clear vim search
         {
             "before": ["leader", "space"],
-            "commands": [
-                { "command": ":nohl" }
-            ]
+            "commands": [ ":nohl" ]
         },
         // Go to end of line with E
-        {
-            "before": ["E"],
-            "after": ["$"]
-        },
+        { "before": ["E"], "after": ["$"] },
+
         // Switch tabs
         // (Needed here because f[ind] will switch tabs when searching for L and H)
         {
             "before": ["H"],
-            "commands": [
-                { "command": "workbench.action.previousEditorInGroup" }
-            ]
+            "commands": [ "workbench.action.previousEditorInGroup" ]
         },
         {
             "before": ["L"],
-            "commands": [
-                { "command": "workbench.action.nextEditorInGroup" }
-            ]
+            "commands": [ "workbench.action.nextEditorInGroup" ]
         },
         // Keep editor preview open
         {
             "before": ["leader", "c"],
-            "commands": [
-                { "command": "workbench.action.keepEditor" }
-            ]
+            "commands": [ "workbench.action.keepEditor" ]
         },
         {
             "before": ["g", "i"],
-            "commands": [
-                { "command": "editor.action.goToImplementation" }
-            ]
+            "commands": [ "editor.action.goToImplementation" ]
         },
         {
             "before": ["g", "r"],
+            "commands": [ "editor.action.referenceSearch.trigger" ]
+        },
+        {
+            "before": ["g", "f"],
+            "after": [ "v", "a", "w" ],
             "commands": [
-                { "command": "editor.action.referenceSearch.trigger" }
-            ]
+                "workbench.action.findInFiles",
+                "search.action.refreshSearchResults",
+                "extension.vim_escape",
+                "search.action.focusNextSearchResult",
+            ],
         },
-        // Easy motion shortcuts
-        { // Search for character (all directions)
-            "before": ["leader", "s"],
-            "after": ["leader", "leader", "s"]
-        },
-        { // Find character forwards
-            "before": ["leader", "f"],
-            "after": ["leader", "leader", "f"]
-        },
-        { // Find character backwards
-            "before": ["leader", "F"],
-            "after": ["leader", "leader", "F"]
-        },
-        { // Till character forwards
-            "before": ["leader", "t"],
-            "after": ["leader", "leader", "t"]
-        },
-        { // Till character backwards
-            "before": ["leader", "T"],
-            "after": ["leader", "leader", "T"]
-        },
-        { // Start of word Backwards
-            "before": ["leader", "b"],
-            "after": ["leader", "leader", "b"]
-        },
-        { // Start of Word forwards
-            "before": ["leader", "w"],
-            "after": ["leader", "leader", "w"]
-        }
     ],
 
     // Terminal
@@ -364,22 +306,20 @@
 
     // Status Bar Color
     // Gruvbox colors: https://github.com/morhetz/gruvbox/blob/master/colors/gruvbox.vim
-    "vim.statusBarColorControl": false,
-    "vim.statusBarColors": {
-        "insert": "#458588", // Blue
-        "normal": "#7c6f64", // Dark
-        "replace": "#689d6a", // Aqua
-        "visual": "#d65d0e", // Orange
-        "visualblock": "#d65d0e", // Orange
-        "visualline": "#d65d0e" // Orange
-    },
+    "vim.statusBarColorControl": true,
+    "vim.statusBarColors.insert": [ "#458588", "#282828" ], // Blue
+    "vim.statusBarColors.normal": [ "#242120", "#ccc" ], // Dark
+    "vim.statusBarColors.replace": [ "#689d6a", "#282828" ], // Aqua
+    "vim.statusBarColors.visual": [ "#d65d0e", "#282828" ], // Orange
+    "vim.statusBarColors.visualblock": [ "#d65d0e", "#282828" ], // Orange
+    "vim.statusBarColors.visualline": [ "#d65d0e", "#282828" ], // Orange
 
     // StatusBar settings are forced by vim if the above setting is used
     "workbench.colorCustomizations": {
-        "statusBar.foreground": "#000",
-        "statusBar.background": "#7c6f64",
-        "statusBar.noFolderBackground": "#7c6f64",
-        "statusBar.debuggingBackground": "#7c6f64"
+        "statusBar.background": "#242120",
+        "statusBar.noFolderBackground": "#242120",
+        "statusBar.debuggingBackground": "#242120",
+        "statusBar.foreground": "#ccc"
     },
 
     // Settings forced by vscode/plugins

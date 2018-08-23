@@ -31,10 +31,15 @@
     { "key": "ctrl+s", "command": "editor.action.sortLinesAscending",
                           "when": "editorFocus && !editorReadonly" },
 
-    { "key": "alt+l", "command": "editor.action.marker.next",
+    { "key": "alt+l", "command": "editor.action.marker.nextInFiles",
                          "when": "editorFocus && !editorReadonly" },
-    { "key": "alt+h", "command": "editor.action.marker.prev",
+    { "key": "alt+h", "command": "editor.action.marker.prevInFiles",
                          "when": "editorFocus && !editorReadonly" },
+
+    { "key": "]", "command": "search.action.focusNextSearchResult",
+                         "when": "hasSearchResult" },
+    { "key": "[", "command": "search.action.focusPreviousSearchResult",
+                         "when": "hasSearchResult" },
 
     // Grids
     { "key": "ctrl+|",     "command": "workbench.action.splitEditorRight" },
