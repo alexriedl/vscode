@@ -306,13 +306,15 @@
 
     // Status Bar Color
     // Gruvbox colors: https://github.com/morhetz/gruvbox/blob/master/colors/gruvbox.vim
-    "vim.statusBarColorControl": true,
+    "vim.statusBarColorControl": false,
+/*
     "vim.statusBarColors.insert": [ "#458588", "#282828" ], // Blue
     "vim.statusBarColors.normal": [ "#242120", "#ccc" ], // Dark
     "vim.statusBarColors.replace": [ "#689d6a", "#282828" ], // Aqua
     "vim.statusBarColors.visual": [ "#d65d0e", "#282828" ], // Orange
     "vim.statusBarColors.visualblock": [ "#d65d0e", "#282828" ], // Orange
     "vim.statusBarColors.visualline": [ "#d65d0e", "#282828" ], // Orange
+*/
 
     // StatusBar settings are forced by vim if the above setting is used
     "workbench.colorCustomizations": {
