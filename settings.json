@@ -8,6 +8,7 @@
     // Plugin Settings
     "C_Cpp.intelliSenseEngine": "Default",
     "csharp.referencesCodeLens.enabled": false,
+    "csharp.suppressDotnetInstallWarning": true,
     "csharp.suppressDotnetRestoreNotification": true,
     "csharp.suppressHiddenDiagnostics": false,
     "git.autofetch": false,
