@@ -74,7 +74,7 @@
     "debug.inlineValues": true,
     "debug.toolBarLocation": "docked",
     "diffEditor.renderSideBySide": true,
-    "editor.autoClosingBrackets": false,
+    "editor.autoClosingBrackets": "never",
     "editor.codeLens": true,
     "editor.fontFamily": "'Consolas', 'Droid Sans Mono', 'Courier New', monospace, 'Droid Sans Fallback'",
     "editor.fontSize": 12,
@@ -101,8 +101,9 @@
     "window.title": "${dirty}${rootName}${separator}${activeEditorShort}",
     "window.zoomLevel": 0,
     "workbench.colorTheme": "Gruvbox Dark Hard",
-    "workbench.editor.enablePreview": false,
-    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "workbench.editor.enablePreview": true,
+    "workbench.settings.editor": "json",
+    "workbench.editor.enablePreviewFromQuickOpen": true,
     "workbench.editor.tabCloseButton": "off",
     "workbench.iconTheme": "vscode-icons",
     "workbench.panel.defaultLocation": "right",
@@ -357,5 +358,6 @@
             "disablePrefetch": false
         },
         "schemaVersion": 1
-    }
+    },
+    "breadcrumbs.enabled": true
 }
