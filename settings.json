@@ -18,6 +18,10 @@
     "gitlens.historyExplorer.enabled": true,
     "gitlens.keymap": "none",
     "gitlens.showWhatsNewAfterUpgrades": false,
+    "msbuildProjectTools.experimentalFeatures": [],
+    "msbuildProjectTools.logging.seq.level": "Verbose",
+    "msbuildProjectTools.nuget.includePreRelease": true,
+    "msbuildProjectTools.nuget.newestVersionsFirst": true,
     "shellcheck.customArgs": [ "-x" ],
     "shellcheck.disableVersionCheck": true,
     "typescript.updateImportsOnFileMove.enabled": "never",
@@ -72,6 +76,7 @@
     "extensions.showRecommendationsOnlyOnDemand": true,
 
     // Editor Stuffs
+    "breadcrumbs.enabled": true,
     "debug.inlineValues": true,
     "debug.toolBarLocation": "docked",
     "diffEditor.renderSideBySide": true,
@@ -233,10 +238,18 @@
         "workbench.action.debug.stepOut",
         "workbench.action.debug.stepOver",
         "workbench.action.debug.stop",
+        "workbench.action.firstEditorInGroup",
         "workbench.action.focusActiveEditorGroup",
+        "workbench.action.focusEighthEditorGroup",
+        "workbench.action.focusFifthEditorGroup",
         "workbench.action.focusFirstEditorGroup",
+        "workbench.action.focusFourthEditorGroup",
+        "workbench.action.focusLastEditorGroup",
         "workbench.action.focusSecondEditorGroup",
+        "workbench.action.focusSeventhEditorGroup",
+        "workbench.action.focusSixthEditorGroup",
         "workbench.action.focusThirdEditorGroup",
+        "workbench.action.lastEditorInGroup",
         "workbench.action.navigateDown",
         "workbench.action.navigateLeft",
         "workbench.action.navigateRight",
@@ -259,8 +272,6 @@
         "workbench.action.terminal.copySelection",
         "workbench.action.terminal.deleteWordLeft",
         "workbench.action.terminal.deleteWordRight",
-        "workbench.action.terminal.findWidget.history.showNext",
-        "workbench.action.terminal.findWidget.history.showPrevious",
         "workbench.action.terminal.focus",
         "workbench.action.terminal.focusAtIndex1",
         "workbench.action.terminal.focusAtIndex2",
@@ -299,7 +310,9 @@
         "workbench.action.terminal.scrollUpPage",
         "workbench.action.terminal.selectAll",
         "workbench.action.terminal.selectToNextCommand",
+        "workbench.action.terminal.selectToNextLine",
         "workbench.action.terminal.selectToPreviousCommand",
+        "workbench.action.terminal.selectToPreviousLine",
         "workbench.action.terminal.split",
         "workbench.action.terminal.splitInActiveWorkspace",
         "workbench.action.terminal.toggleTerminal",
@@ -338,27 +351,5 @@
         "suppressShowKeyBindingsNotice": true,
         "suppressUpdateNotice": true,
         "suppressWelcomeNotice": true
-    },
-    "msbuildProjectTools": {
-        "logging": {
-            "level": "Information",
-            "seq": {},
-            "file": "",
-            "trace": false
-        },
-        "language": {
-            "disableFeature": {},
-            "useClassicProvider": false,
-            "disable": {
-                "hover": false
-            }
-        },
-        "nuget": {
-            "newestVersionsFirst": true,
-            "includePreRelease": true,
-            "disablePrefetch": false
-        },
-        "schemaVersion": 1
-    },
-    "breadcrumbs.enabled": true
+    }
 }
