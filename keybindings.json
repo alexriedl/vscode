@@ -36,10 +36,12 @@
     { "key": "alt+h", "command": "editor.action.marker.prevInFiles",
                          "when": "editorFocus && !editorReadonly" },
 
+                         /*
     { "key": "]", "command": "search.action.focusNextSearchResult",
                          "when": "hasSearchResult" },
     { "key": "[", "command": "search.action.focusPreviousSearchResult",
                          "when": "hasSearchResult" },
+*/
 
     // Grids
     { "key": "ctrl+|",     "command": "workbench.action.splitEditorRight" },

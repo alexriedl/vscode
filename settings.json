@@ -1,4 +1,3 @@
-// Place your settings in this file to overwrite the default settings
 {
     "files.associations": {
         "*.csproj": "msbuild",
@@ -62,6 +61,14 @@
             "isWholeLine": true
         },
         {
+            "text": "@CLEANUP",
+            "color": "#FFF",
+            "backgroundColor": "purple",
+            "border": "1px solid #000",
+            "borderRadius": "2px",
+            "isWholeLine": true
+        },
+        {
             "text": "tslint:disable",
             "color": "#FFF",
             "backgroundColor": "#000",
@@ -108,11 +115,11 @@
     "window.zoomLevel": 0,
     "workbench.colorTheme": "Gruvbox Dark Hard",
     "workbench.editor.enablePreview": true,
-    "workbench.settings.editor": "json",
     "workbench.editor.enablePreviewFromQuickOpen": true,
     "workbench.editor.tabCloseButton": "off",
     "workbench.iconTheme": "vscode-icons",
     "workbench.panel.defaultLocation": "right",
+    "workbench.settings.editor": "json",
     "workbench.startupEditor": "none",
 
     // Suggestions
@@ -220,8 +227,9 @@
     // Terminal
     "terminal.external.linuxExec": "alacritty",
     "terminal.integrated.cursorBlinking": true,
-    "terminal.integrated.fontFamily": "'Ubuntu Mono'",
     "terminal.integrated.env.linux": { "TMUX_ATTACH_TO_SESSION": "${workspaceFolderBasename}" },
+    "terminal.integrated.experimentalBufferImpl": "TypedArray",
+    "terminal.integrated.fontFamily": "'Ubuntu Mono'",
     "terminal.integrated.commandsToSkipShell": [
         "workbench.action.terminal.rename",
         "workbench.action.closePanel",
