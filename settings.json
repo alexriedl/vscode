@@ -14,11 +14,12 @@
     "gitlab-ci-validator.gitLabURL": "https://gitlab.directsupply.cloud",
     "gitlab-ci-validator.ignoreCertificateErrors": true,
     "gitlens.codeLens.enabled": false,
-    "gitlens.historyExplorer.enabled": true,
     "gitlens.keymap": "none",
     "gitlens.showWhatsNewAfterUpgrades": false,
+    "gitlens.views.fileHistory.enabled": true,
+    "gitlens.views.lineHistory.enabled": true,
     "msbuildProjectTools.experimentalFeatures": [],
-    "msbuildProjectTools.logging.seq.level": "Verbose",
+    "msbuildProjectTools.logging.seq.level": "Warning",
     "msbuildProjectTools.nuget.includePreRelease": true,
     "msbuildProjectTools.nuget.newestVersionsFirst": true,
     "shellcheck.customArgs": [ "-x" ],
@@ -138,7 +139,7 @@
         "**/.env": true
     },
 
-    // Vim Setting
+    // Vim Settings
     "vim.autoindent": true,
     "vim.easymotion": false,
     "vim.enableNeovim": true,
