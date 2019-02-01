@@ -113,6 +113,7 @@
     "window.menuBarVisibility": "hidden",
     "window.newWindowDimensions": "maximized",
     "window.title": "${dirty}${rootName}${separator}${activeEditorShort}",
+    "window.titleBarStyle": "native",
     "window.zoomLevel": 0,
     "workbench.colorTheme": "Gruvbox Dark Hard",
     "workbench.editor.enablePreview": true,
