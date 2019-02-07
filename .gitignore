@@ -1,5 +1,6 @@
 workspaceStorage/
 projects.json
 vsicons.settings.json
+globalStorage/
 
 *.swp
