@@ -6,6 +6,7 @@
 
     // Plugin Settings
     "C_Cpp.intelliSenseEngine": "Default",
+    "C_Cpp.intelliSenseCachePath": "~/.cache/ipch",
     "csharp.referencesCodeLens.enabled": false,
     "csharp.suppressDotnetInstallWarning": true,
     "csharp.suppressDotnetRestoreNotification": true,
