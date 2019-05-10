@@ -27,7 +27,6 @@
     "typescript.updateImportsOnFileMove.enabled": "never",
     "typescriptHero.imports.multiLineTrailingComma": true,
     "typescriptHero.imports.multiLineWrapThreshold": 120,
-    "vsicons.dontShowNewVersionMessage": true,
 
     "todohighlight.toggleURI": true,
     "todohighlight.keywords": [
@@ -119,7 +118,6 @@
     "workbench.editor.enablePreview": true,
     "workbench.editor.enablePreviewFromQuickOpen": true,
     "workbench.editor.tabCloseButton": "off",
-    "workbench.iconTheme": "vscode-icons",
     "workbench.panel.defaultLocation": "right",
     "workbench.settings.editor": "json",
     "workbench.startupEditor": "none",
