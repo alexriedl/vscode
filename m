@@ -25,14 +25,14 @@ sub_install() {
   printf "Finished installing extensions\n"
 }
 
-sub_uninstall_extra() {
+sub_rm_extra() {
   comm -13 <(sort "${SCRIPT_DIR}/extensions") <("${VSCODE}" --list-extensions | sort) | xargs -I % ${VSCODE} --uninstall-extension %
-  printf "Finished uninstalling extensions\n"
+  printf "Finished uninstalling extra extensions\n"
 }
 
 sub_sync() {
   sub_install
-  sub_uninstall_extra
+  sub_rm_extra
 }
 
 sub_help() {
@@ -41,9 +41,10 @@ Usage:
   ./%s <subcommand> [options]
 
 Subcommands:
-  save      Write all current extensions to extensions file
-  install   Read extensions file, and install all extensions from it
-  sync      Installs all extensions in extensions file, then writes all current extensions back to that file
+  save     Write all currently installed extensions to the extensions file
+  install  Ensures all extensions in the extensions file are installed
+  rm_extra Uninstalls all extensions that are not in the extensions file
+  sync     Ensures all extensions in the extensions file are installed and uninstalls all extensions that are not in that file
 \n\n" "${SCRIPT_NAME}"
 }
 
