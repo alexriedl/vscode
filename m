@@ -4,7 +4,9 @@ SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 SCRIPT_NAME="$(basename "$0")"
 
 VSCODE="code"
-if [[ "${SCRIPT_DIR}" == *"Code - Insiders"* ]]; then
+if [[ "${SCRIPT_DIR}" == *"VSCodium"* ]]; then
+  VSCODE="vscodium"
+elif [[ "${SCRIPT_DIR}" == *"Code - Insiders"* ]]; then
   VSCODE="code-insiders"
 fi
 
