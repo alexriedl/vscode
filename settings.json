@@ -5,8 +5,8 @@
     },
 
     // Plugin Settings
-    "C_Cpp.intelliSenseEngine": "Default",
     "C_Cpp.intelliSenseCachePath": "~/.cache/ipch",
+    "C_Cpp.intelliSenseEngine": "Default",
     "csharp.referencesCodeLens.enabled": false,
     "csharp.suppressDotnetInstallWarning": true,
     "csharp.suppressDotnetRestoreNotification": true,
@@ -23,6 +23,7 @@
     "msbuildProjectTools.logging.seq.level": "Warning",
     "msbuildProjectTools.nuget.includePreRelease": true,
     "msbuildProjectTools.nuget.newestVersionsFirst": true,
+    "omnisharp.enableRoslynAnalyzers": false,
     "shellcheck.customArgs": [ "-x" ],
     "shellcheck.disableVersionCheck": true,
     "typescript.updateImportsOnFileMove.enabled": "never",
