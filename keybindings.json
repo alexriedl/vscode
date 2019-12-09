@@ -36,6 +36,13 @@
     { "key": "alt+h", "command": "editor.action.marker.prevInFiles",
                          "when": "editorFocus && !editorReadonly" },
 
+    { "key": "escape", "command": "vscode-neovim.escape" },
+    { "key": "z z",    "command": "workbench.action.closeActiveEditor" },
+
+
+    { "key": "shift+h", "command": "workbench.action.previousEditorInGroup" },
+    { "key": "shift+l", "command": "workbench.action.nextEditorInGroup" },
+
                          /*
     { "key": "]", "command": "search.action.focusNextSearchResult",
                          "when": "hasSearchResult" },

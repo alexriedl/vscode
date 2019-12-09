@@ -140,6 +140,8 @@
         "**/.env": true
     },
 
+    "vscode-neovim.neovimPath": "/usr/local/bin/nvim",
+
     // Vim Settings
     "vim.autoindent": true,
     "vim.easymotion": false,
@@ -272,5 +274,6 @@
         "suppressShowKeyBindingsNotice": true,
         "suppressUpdateNotice": true,
         "suppressWelcomeNotice": true
-    }
+    },
+    "vsicons.dontShowNewVersionMessage": true
 }
